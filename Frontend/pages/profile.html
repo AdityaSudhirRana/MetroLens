@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - AI Package Inspector</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-brand">
+          <img src="../assets/logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Navigation</div>
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Inspections</div>
+        <a href="new-inspection.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <span>New Inspection / Scan</span>
+        </a>
+        <a href="inspection-history.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <span>Inspection History</span>
+        </a>
+
+        <div class="nav-section-title">Database & Records</div>
+        <a href="products.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          <span>Product Database</span>
+        </a>
+        <a href="inquiries.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Inquiry Management</span>
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          <span>Reports & Analytics</span>
+        </a>
+
+        <div class="nav-section-title">Account</div>
+        <a href="profile.html" class="nav-item active">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>My Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="logout-btn" id="btn-logout">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburger-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div style="font-weight:700; font-size:1.1rem; color:var(--primary-dark);">Officer Profile & Account Settings</div>
+        </div>
+
+        <div class="topbar-right">
+          <a href="profile.html" class="user-profile-badge">
+            <img id="nav-user-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" class="user-avatar" alt="Avatar" />
+            <div class="user-info">
+              <span id="nav-user-name" class="user-name">Rahul Sharma</span>
+              <span id="nav-user-role" class="user-role-tag">Senior Inspector</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Officer Credentials</h1>
+            <p class="page-subtitle">Manage personal information, department designation, and portal security.</p>
+          </div>
+        </div>
+
+        <div class="dashboard-grid-2">
+          <!-- Profile Edit Form -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Personal & Employment Details</h3>
+            </div>
+
+            <form id="profile-form">
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="prof-name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="prof-name" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="prof-empid">Employee ID</label>
+                  <input type="text" id="prof-empid" class="form-control" readonly style="background:var(--surface-alt);" />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="prof-email">Official Email</label>
+                  <input type="email" id="prof-email" class="form-control" readonly style="background:var(--surface-alt);" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="prof-phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="prof-phone" class="form-control" required />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label class="form-label" for="prof-dept">Department</label>
+                  <input type="text" id="prof-dept" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="prof-designation">Designation</label>
+                  <input type="text" id="prof-designation" class="form-control" />
+                </div>
+              </div>
+
+              <div style="text-align:right; margin-top:16px;">
+                <button type="submit" class="btn btn-primary">Save Profile Changes</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Profile Badge & Password Form Card -->
+          <div>
+            <!-- Officer Summary Box -->
+            <div class="card text-center" style="margin-bottom:24px;">
+              <img id="prof-avatar-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" style="width:90px; height:90px; border-radius:50%; object-fit:cover; margin:0 auto 12px auto; border:3px solid var(--primary-border);" alt="Avatar" />
+              <span id="prof-role-tag" class="badge badge-compliant" style="margin-bottom:8px;">INSPECTOR</span>
+              <h3 style="font-size:1.2rem; font-weight:800; color:var(--primary-dark);">Directorate of Legal Metrology</h3>
+              <p class="text-muted" style="font-size:0.85rem;">Authorized Inspection Officer</p>
+            </div>
+
+            <!-- Security Password Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Change Password</h3>
+              </div>
+
+              <form id="change-password-form">
+                <div class="form-group">
+                  <label class="form-label" for="pwd-current">Current Password <span class="required">*</span></label>
+                  <input type="password" id="pwd-current" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="pwd-new">New Password <span class="required">*</span></label>
+                  <input type="password" id="pwd-new" class="form-control" placeholder="Min 6 characters" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="pwd-confirm">Confirm New Password <span class="required">*</span></label>
+                  <input type="password" id="pwd-confirm" class="form-control" required />
+                </div>
+
+                <button type="submit" class="btn btn-secondary" style="width:100%;">Update Security Password</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/profile.js"></script>
+</body>
+</html>

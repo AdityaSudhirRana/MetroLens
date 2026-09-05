@@ -1,0 +1,215 @@
+{
+  "image_id": "sample",
+  "source_image": {
+    "path": "OCR/sample.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "processed_image": {
+    "path": "OCR/sample_processed.jpg",
+    "width": 800,
+    "height": 600
+  },
+  "annotated_image": {
+    "path": "OCR/sample_annotated.jpg"
+  },
+  "ocr": {
+    "engine": "EasyOCR",
+    "language": [
+      "en"
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "text": "CRISPY POTATO CHIPS",
+        "confidence": 0.8,
+        "bbox": [
+          [
+            47,
+            61
+          ],
+          [
+            407,
+            61
+          ],
+          [
+            407,
+            97
+          ],
+          [
+            47,
+            97
+          ]
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Net Quantity: 75 g",
+        "confidence": 0.55,
+        "bbox": [
+          [
+            48,
+            138
+          ],
+          [
+            256,
+            138
+          ],
+          [
+            256,
+            168
+          ],
+          [
+            48,
+            168
+          ]
+        ]
+      },
+      {
+        "id": 3,
+        "text": "MRP Rs: 30.00 (inclusive of all taxes)",
+        "confidence": 0.61,
+        "bbox": [
+          [
+            48,
+            202
+          ],
+          [
+            426,
+            202
+          ],
+          [
+            426,
+            230
+          ],
+          [
+            48,
+            230
+          ]
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Mfg Date: 02/2026",
+        "confidence": 0.77,
+        "bbox": [
+          [
+            48,
+            270
+          ],
+          [
+            246,
+            270
+          ],
+          [
+            246,
+            298
+          ],
+          [
+            48,
+            298
+          ]
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Mfg By: Kardashev Foods Pvt Ltd, Solan, HP",
+        "confidence": 0.74,
+        "bbox": [
+          [
+            48,
+            336
+          ],
+          [
+            468,
+            336
+          ],
+          [
+            468,
+            364
+          ],
+          [
+            48,
+            364
+          ]
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Consumer Care: 1800-123-4567 | care@kardashev.com",
+        "confidence": 0.8,
+        "bbox": [
+          [
+            45,
+            400
+          ],
+          [
+            562,
+            400
+          ],
+          [
+            562,
+            426
+          ],
+          [
+            45,
+            426
+          ]
+        ]
+      }
+    ]
+  },
+  "legal_metrology_compliance": {
+    "compliance_score_pct": 100.0,
+    "overall_status": "COMPLIANT",
+    "total_rules_checked": 6,
+    "rules_passed_count": 6,
+    "rules_evaluation": {
+      "rule_6_1_da_mrp": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 6(1)(da) - Retail Sale Price (MRP)",
+        "found": true,
+        "amount": "30.00",
+        "inclusive_of_all_taxes": true,
+        "raw_text": "Rs: 30.00"
+      },
+      "rule_6_1_c_net_quantity": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 6(1)(c) - Net Quantity",
+        "found": true,
+        "quantity": "75 g",
+        "unit": "g",
+        "standard_unit_valid": true,
+        "raw_text": "Net Quantity: 75 g"
+      },
+      "rule_6_1_d_mfg_date": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 6(1)(d) - Month & Year of Packing/Mfg",
+        "found": true,
+        "date": "02/2026",
+        "raw_text": "Date: 02/2026"
+      },
+      "rule_6_1_a_manufacturer": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 6(1)(a) - Manufacturer / Packer Details",
+        "found": true,
+        "details": "Mfg By: Kardashev Foods Pvt Ltd, Solan, HP"
+      },
+      "rule_6_1_e_consumer_care": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 6(1)(e) - Consumer Care Helpline / Email",
+        "found": true,
+        "contact": "Email: care@kardashev.com | Phone: 1800-123-4567"
+      },
+      "rule_7_font_size": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 7 - Minimum Font Size & Proportionality",
+        "compliant_lines_count": 6,
+        "too_small_lines_count": 0,
+        "min_font_height_px": 26,
+        "avg_font_height_px": 29.3
+      }
+    },
+    "violations": []
+  }
+}

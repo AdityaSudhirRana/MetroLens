@@ -1,0 +1,14 @@
+# Environment / Secrets
+Module-OCR/.env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local API credentials
+Module-OCR/OpenCV/API Details.txt

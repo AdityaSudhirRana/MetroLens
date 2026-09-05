@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Officer Registration - AI Package Inspector</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card auth-card-wide">
+      <div class="auth-header">
+        <img src="../assets/logo.svg" alt="AI Package Inspector Logo" class="auth-logo" />
+        <h1 class="auth-title">Legal Metrology Officer Onboarding</h1>
+        <p class="auth-subtitle">Create your Legal Metrology Officer Account</p>
+      </div>
+
+      <!-- Success Notification Alert -->
+      <div id="register-success-alert" class="badge badge-success" style="display:none; width:100%; text-align:center; padding:12px; font-size:0.9rem; margin-bottom:20px; box-sizing:border-box;">
+        ✓ Registration successful — Redirecting to Officer Login...
+      </div>
+
+      <!-- Error Alert -->
+      <div id="register-error-alert" class="invalid-feedback" style="display:none; text-align:center; padding:10px; background:#fff2f2; border:1px solid #fecaca; border-radius:6px; margin-bottom:16px; font-weight:600;">
+        Registration error.
+      </div>
+
+      <!-- Registration Form -->
+      <form id="register-form">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="reg-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="reg-name" class="form-control" placeholder="e.g. Rahul Sharma" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reg-empid">Employee ID <span class="required">*</span></label>
+            <input type="text" id="reg-empid" class="form-control" placeholder="e.g. INS-109" required />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="reg-email">Official Email <span class="required">*</span></label>
+            <input type="email" id="reg-email" class="form-control" placeholder="officer@domain.gov.in" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reg-phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="reg-phone" class="form-control" placeholder="+91 98765 43210" required />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="reg-dept">Department <span class="required">*</span></label>
+            <select id="reg-dept" class="form-control" required>
+              <option value="Directorate of Legal Metrology">Directorate of Legal Metrology</option>
+              <option value="Packaged Commodities Standards Cell">Packaged Commodities Standards Cell</option>
+              <option value="Food Safety & Weights Standards">Food Safety & Weights Standards</option>
+              <option value="Enforcement & Consumer Protection">Enforcement & Consumer Protection</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reg-office">Office / Region <span class="required">*</span></label>
+            <input type="text" id="reg-office" class="form-control" placeholder="e.g. North Zone - Delhi" required />
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="reg-password">Password <span class="required">*</span></label>
+            <input type="password" id="reg-password" class="form-control" placeholder="Min 6 characters" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reg-confirm-password">Confirm Password <span class="required">*</span></label>
+            <input type="password" id="reg-confirm-password" class="form-control" placeholder="Re-enter password" required />
+          </div>
+        </div>
+
+        <button type="submit" id="btn-register-submit" class="btn-auth-submit" style="margin-top:10px;">
+          Create Officer Account
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Already registered? <a href="login.html">Sign In Here</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

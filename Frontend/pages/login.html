@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - AI Package Inspector</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <img src="../assets/logo.svg" alt="AI Package Inspector Logo" class="auth-logo" />
+        <h1 class="auth-title">Legal Metrology Sign In</h1>
+        <p class="auth-subtitle">AI Commodity Package Compliance Portal</p>
+      </div>
+
+      <!-- Demo Accounts Callout Box -->
+      <div class="demo-accounts-box">
+        <div class="demo-title">
+          <span>ℹ️</span> <span>Demo Login Accounts</span>
+        </div>
+        <div class="demo-account-item">
+          <span>Inspector:</span>
+          <code>inspector@example.com / 123456</code>
+        </div>
+        <div class="demo-account-item">
+          <span>Admin:</span>
+          <code>admin@example.com / admin123</code>
+        </div>
+      </div>
+
+      <!-- Validation Error Alert -->
+      <div id="auth-error-alert" class="invalid-feedback" style="display:none; text-align:center; padding:10px; background:#fff2f2; border:1px solid #fecaca; border-radius:6px; margin-bottom:16px; font-weight:600;">
+        Invalid credentials.
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="email">Email or Employee ID <span class="required">*</span></label>
+          <input type="text" id="email" class="form-control" placeholder="e.g. inspector@example.com or INS-102" required autofocus />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password <span class="required">*</span></label>
+          <div class="password-field-container">
+            <input type="password" id="password" class="form-control" placeholder="Enter your password" required />
+            <button type="button" id="toggle-password-btn" class="password-toggle-btn" title="Toggle password visibility">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="remember-forgot-row">
+          <label class="remember-me-checkbox">
+            <input type="checkbox" id="remember-me" checked />
+            <span>Remember login session</span>
+          </label>
+          <a href="#" onclick="alert('Demo Mode: Use password 123456 for inspector or admin123 for admin.'); return false;" class="forgot-password-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" id="btn-login-submit" class="btn-auth-submit">
+          Sign In to Portal
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        New Legal Metrology Inspector? <a href="register.html">Register Account</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+</body>
+</html>

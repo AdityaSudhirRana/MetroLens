@@ -1,0 +1,468 @@
+/* ==========================================================================
+   AI PACKAGE INSPECTOR - DASHBOARD DESIGN SYSTEM (MATCHING MOCKUP)
+   ========================================================================== */
+
+/* Overview Header Banner */
+.dashboard-welcome-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.overview-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.overview-sub {
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.date-badge {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+/* ==========================================================================
+   1. TOP KPI STAT CARDS (4 COLUMNS)
+   ========================================================================== */
+.kpi-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kpi-card {
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: var(--transition);
+}
+
+.kpi-blue {
+  background-color: #f0f9ff;
+  border: 1px solid #e0f2fe;
+}
+
+.kpi-green {
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+}
+
+.kpi-purple {
+  background-color: #f5f3ff;
+  border: 1px solid #ede9fe;
+}
+
+.kpi-orange {
+  background-color: #fff7ed;
+  border: 1px solid #ffedd5;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.kpi-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.kpi-blue .kpi-icon-box { background-color: #2563eb; }
+.kpi-green .kpi-icon-box { background-color: #16a34a; }
+.kpi-purple .kpi-icon-box { background-color: #7c3aed; }
+.kpi-orange .kpi-icon-box { background-color: #ea580c; }
+
+.kpi-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-value {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.kpi-val-danger {
+  color: #ea580c;
+}
+
+.kpi-label {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   2. QUICK ACTION TILES (4 COLUMNS)
+   ========================================================================== */
+.quick-action-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.action-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border-color: #cbd5e1;
+}
+
+.action-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.action-circle-blue { background-color: #2563eb; }
+.action-circle-green { background-color: #16a34a; }
+.action-circle-purple { background-color: #7c3aed; }
+.action-circle-orange { background-color: #ea580c; }
+
+.action-text-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.action-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.action-sub {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.action-chevron {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   3. MAIN 2-COLUMN GRID (LOG TABLE & INSPECTOR STREAM)
+   ========================================================================== */
+.main-dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+}
+
+.dashboard-panel-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.panel-card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.panel-card-sub {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.panel-header-btn {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.panel-header-btn:hover {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+}
+
+.panel-header-btn-manage {
+  border: 1px solid #cbd5e1;
+  color: #2563eb;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.panel-header-btn-manage:hover {
+  background-color: #f8fafc;
+}
+
+/* Data Table Styling matching mockup */
+.mockup-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.mockup-data-table th {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mockup-data-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
+.mockup-data-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.report-id-link {
+  font-family: 'JetBrains Mono', monospace, sans-serif;
+  font-size: 0.82rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.company-name-text {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.88rem;
+}
+
+.product-name-text {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+.col-inspector-name {
+  font-weight: 600;
+  color: #334155;
+}
+
+.badge-pill-compliant {
+  background-color: #dcfce7;
+  color: #15803d;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.badge-pill-non-compliant {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.btn-table-details {
+  border: 1px solid #bfdbfe;
+  background-color: #eff6ff;
+  color: #2563eb;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.btn-table-details:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* Inspector Stream Table */
+.mockup-inspector-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.mockup-inspector-table th {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.78rem;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mockup-inspector-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.inspector-profile-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.inspector-avatar-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inspector-full-name {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.88rem;
+}
+
+.inspector-code-id {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-family: monospace;
+}
+
+.col-scans-count {
+  color: #334155;
+  font-size: 0.88rem;
+}
+
+.col-last-active {
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+.active-dot-green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.active-dot-grey {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.empty-table-cell {
+  text-align: center;
+  padding: 24px;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS FOR DASHBOARD
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .kpi-cards-grid,
+  .quick-action-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .kpi-cards-grid,
+  .quick-action-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

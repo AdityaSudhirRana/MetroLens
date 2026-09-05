@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspector Details - AI Package Inspector</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/tables.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-brand">
+          <img src="../assets/logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Navigation</div>
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Inspections</div>
+        <a href="new-inspection.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <span>New Inspection / Scan</span>
+        </a>
+        <a href="inspection-history.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <span>Inspection History</span>
+        </a>
+
+        <div class="nav-section-title">Database & Records</div>
+        <a href="products.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          <span>Product Database</span>
+        </a>
+        <a href="inquiries.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Inquiry Management</span>
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          <span>Reports & Analytics</span>
+        </a>
+
+        <div class="nav-section-title">Personnel</div>
+        <a href="inspector-details.html" class="nav-item active">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          <span>Inspector Details</span>
+        </a>
+
+        <div class="nav-section-title">Account</div>
+        <a href="profile.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>My Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="logout-btn" id="btn-logout">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburger-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div style="font-weight:700; font-size:1.1rem; color:var(--primary-dark);">Individual Inspector Profile & Enforcement Performance</div>
+        </div>
+
+        <div class="topbar-right">
+          <a href="profile.html" class="user-profile-badge">
+            <img id="nav-user-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" class="user-avatar" alt="Avatar" />
+            <div class="user-info">
+              <span id="nav-user-name" class="user-name">Rahul Sharma</span>
+              <span id="nav-user-role" class="user-role-tag">Senior Inspector</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-content" id="officer-inspector-details-container">
+        <!-- Officer Header Card -->
+        <div class="card" style="margin-bottom:24px;">
+          <div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
+            <img id="officer-det-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" style="width:110px; height:110px; border-radius:50%; object-fit:cover; border:3px solid var(--primary-border);" alt="Officer Avatar" />
+            <div style="flex:1;">
+              <div style="display:flex; align-items:center; gap:12px; margin-bottom:4px;">
+                <h1 id="officer-det-name" style="font-size:1.6rem; font-weight:800; color:var(--primary-dark);">Rahul Sharma</h1>
+                <span id="officer-det-status-badge" class="badge badge-active">Active</span>
+              </div>
+              <p style="font-size:0.95rem; color:var(--text-muted); margin-bottom:6px;">
+                Employee ID: <strong id="officer-det-empid">INS-102</strong> | Designation: <strong id="officer-det-desig">Senior Metrology Inspector</strong>
+              </p>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:6px;">
+                Department: <span id="officer-det-dept">Legal Metrology - North Zone</span> | Office Region: <span id="officer-det-region">North Zone - Delhi</span>
+              </p>
+              <p style="font-size:0.85rem; color:var(--text-muted);">
+                Email: <span id="officer-det-email">inspector@example.com</span> | Phone: <span id="officer-det-phone">+91 98123 45678</span> | Joining Date: <span id="officer-det-joining">2024-03-10</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Inspector Metrics Cards -->
+        <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom:24px;">
+          <div class="stat-card">
+            <div class="stat-value" id="officer-det-total">12</div>
+            <div class="stat-label">Total Inspections</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" id="officer-det-compliant" style="color:var(--success);">10</div>
+            <div class="stat-label">Compliant Packages</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" id="officer-det-noncompliant" style="color:var(--danger);">2</div>
+            <div class="stat-label">Non-Compliant Violations</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value" id="officer-det-pending" style="color:var(--warning);">0</div>
+            <div class="stat-label">Pending Reviews</div>
+          </div>
+        </div>
+
+        <!-- Recent Inspection Activity -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Recent Inspection Activity</h3>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Inspection ID</th>
+                  <th>Product Name</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="officer-det-inspections-tbody">
+                <!-- JS Populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const user = window.requireAuth();
+      if (!user) return;
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const inspectorId = urlParams.get("id") || user.id;
+
+      const users = JSON.parse(localStorage.getItem("users") || "[]");
+      const targetUser = users.find((u) => u.id === inspectorId) || user;
+
+      const inspections = window.getInspections ? window.getInspections() : JSON.parse(localStorage.getItem("inspections") || "[]");
+      const officerInspections = inspections.filter((i) => i.inspectorId === targetUser.id || i.inspectorName === targetUser.name);
+
+      const totalCount = officerInspections.length;
+      const compliantCount = officerInspections.filter((i) => i.status === "Compliant").length;
+      const nonCompliantCount = officerInspections.filter((i) => i.status === "Non-Compliant").length;
+      const pendingCount = officerInspections.filter((i) => i.status === "Pending").length;
+
+      // Populate Elements
+      document.getElementById("officer-det-name").textContent = targetUser.name;
+      document.getElementById("officer-det-empid").textContent = targetUser.employeeId;
+      document.getElementById("officer-det-desig").textContent = targetUser.designation || "Metrology Inspector";
+      document.getElementById("officer-det-dept").textContent = targetUser.department;
+      document.getElementById("officer-det-region").textContent = targetUser.department.includes("North") ? "North Zone - Delhi" : "Central Region";
+      document.getElementById("officer-det-email").textContent = targetUser.email;
+      document.getElementById("officer-det-phone").textContent = targetUser.phone || "+91 98123 45678";
+      document.getElementById("officer-det-joining").textContent = targetUser.joiningDate || "2024-03-10";
+      if (targetUser.avatar) document.getElementById("officer-det-avatar").src = targetUser.avatar;
+
+      const badge = document.getElementById("officer-det-status-badge");
+      if (badge) {
+        badge.textContent = targetUser.status;
+        badge.className = `badge ${targetUser.status === "Active" ? "badge-active" : "badge-inactive"}`;
+      }
+
+      document.getElementById("officer-det-total").textContent = totalCount;
+      document.getElementById("officer-det-compliant").textContent = compliantCount;
+      document.getElementById("officer-det-noncompliant").textContent = nonCompliantCount;
+      document.getElementById("officer-det-pending").textContent = pendingCount;
+
+      const tbody = document.getElementById("officer-det-inspections-tbody");
+      if (tbody) {
+        tbody.innerHTML = "";
+        if (officerInspections.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="6" class="text-muted text-center" style="padding:24px;">No recent inspection activities recorded for this officer.</td></tr>`;
+        } else {
+          officerInspections.forEach((item) => {
+            const tr = document.createElement("tr");
+            let badgeClass = "badge-compliant";
+            if (item.status === "Non-Compliant") badgeClass = "badge-non-compliant";
+            if (item.status === "Pending") badgeClass = "badge-pending";
+
+            tr.innerHTML = `
+              <td class="table-id-cell">${item.id}</td>
+              <td class="font-bold">${item.productName}</td>
+              <td>${item.category}</td>
+              <td>${item.date}</td>
+              <td><span class="badge ${badgeClass}">${item.status}</span></td>
+              <td><a href="inspection-result.html?id=${item.id}" class="btn btn-secondary btn-sm">Result</a></td>
+            `;
+            tbody.appendChild(tr);
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

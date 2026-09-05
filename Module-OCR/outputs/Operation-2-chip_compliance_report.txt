@@ -1,0 +1,36 @@
+# Legal Metrology Compliance Report
+
+**Document / Reference:** Legal Metrology (Packaged Commodities) Rules, 2011  
+**Extraction Status:** Fallback (Extraction Incomplete / Vision API Error)
+
+---
+
+## Final Verdict
+### **NON COMPLIANT**
+
+The package fails to fulfill mandatory packaging declaration requirements under the Legal Metrology (Packaged Commodities) Rules, 2011. Virtually all mandatory declarations are either completely missing (`null`) or incomplete.
+
+---
+
+## 1. Compliances MET
+* **None.**  
+  Based on the OCR and semantic extraction data provided, no mandatory declarations meet the requirements of the Legal Metrology Rules, 2011.
+
+---
+
+## 2. Compliances FAILED
+
+| Required Declaration | Rule Reference | Findings / Extracted Value | Status |
+| :--- | :--- | :--- | :--- |
+| **Manufacturer / Packer / Importer Name & Address** | **Rule 6(1)(a)** & **Rule 10** | Manufacturer name extracted as `"_"` (`"MFG_"`), with address being `null`. Packer and Importer details are also `null`. | **FAILED** (Incomplete & Missing) |
+| **Commodity / Generic Name** | **Rule 6(1)(b)** | Value is `null`. Product name must be clearly stated on the package. | **FAILED** (Missing) |
+| **Net Quantity Declaration** | **Rule 6(1)(c)** & **Rule 12** | Value is `null`. Net quantity using standard units (SI) must be declared. | **FAILED** (Missing) |
+| **Date of Manufacture / Packing / Import** | **Rule 6(1)(d)** | Value is `null`. Month and year of manufacture/packing/import must be specified. | **FAILED** (Missing) |
+| **Retail Sale Price (MRP)** | **Rule 6(1)(e)** & **Rule 2 (MRP)** | Value is `null`. Maximum Retail Price (inclusive of all taxes) must be declared. | **FAILED** (Missing) |
+| **Consumer Care / Grievance Details** | **Rule 6(2)** | Contact name, phone, and email are all `null`. Direct contact info for complaints is mandatory. | **FAILED** (Missing) |
+
+---
+
+### Key Observation & Recommendation
+* **Reason for Non-Compliance:** Mandatory information is completely absent from the extracted data, or the label image was unreadable/failed processing (`Gemini API Error: 404 NOT_FOUND`).
+* **Action Required:** Ensure the physical package label contains all 6 mandatory declarations clearly visible on the **Principal Display Panel (PDP)** in legible print. Re-run OCR analysis with a clear image input.

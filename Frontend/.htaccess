@@ -1,0 +1,8 @@
+# AI Package Inspector - Apache Configuration
+DirectoryIndex index.php
+
+# Prevent directory browsing
+Options -Indexes
+
+# UTF-8 Encoding
+AddDefaultCharset UTF-8

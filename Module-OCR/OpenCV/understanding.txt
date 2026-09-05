@@ -1,0 +1,912 @@
+SIH26034 PROJECT — UNDERSTANDING DOCUMENT
+==========================================
+
+PROJECT:
+Kardashev-6 — SIH 2026 Internal Hackathon
+
+PROBLEM STATEMENT:
+SIH26034
+
+TITLE:
+Software System to check compliance of Packaged Commodities under
+Legal Metrology (Packaged Commodities) Rules, 2011 by scanning
+products, images and labels.
+
+==================================================
+1. PROJECT OBJECTIVE
+==================================================
+
+The system is an AI-assisted inspection system for packaged commodities.
+
+The user provides an image of a packaged product.
+
+The system should:
+
+1. Read the text visible on the package.
+2. Locate the text on the image.
+3. Understand which text corresponds to which declaration.
+4. Extract structured declaration values.
+5. Check those declarations against configured compliance rules.
+6. Produce evidence-backed findings.
+7. Show the result to an inspector through the website.
+
+The system is NOT simply an OCR application.
+
+The complete conceptual pipeline is:
+
+PRODUCT IMAGE
+     |
+     v
+COMPUTER VISION / OPENCV
+     |
+     v
+EASYOCR
+     |
+     v
+OCR TEXT + CONFIDENCE + BOUNDING BOXES
+     |
+     v
+GEMINI AI
+     |
+     v
+STRUCTURED DECLARATIONS
+     |
+     v
+DETERMINISTIC RULE ENGINE
+     |
+     v
+COMPLIANCE FINDINGS
+     |
+     v
+FINAL INSPECTION JSON
+     |
+     v
+FRONTEND / INSPECTOR
+
+
+==================================================
+2. CORE PRINCIPLE
+==================================================
+
+The system has three different responsibilities.
+
+A. COMPUTER VISION / OCR
+--------------------------------
+Answers:
+
+"What can we see in the image?"
+
+It detects text and its location.
+
+OCR output should preserve:
+
+- detected text
+- OCR confidence
+- bounding box / polygon
+- coordinates
+
+
+B. AI / GEMINI
+--------------------------------
+Answers:
+
+"What does the detected text mean?"
+
+Gemini converts raw OCR text into semantic declaration fields.
+
+Examples:
+
+"MRP Rs. 120.00"
+        ->
+mrp = "120.00"
+
+"Net Quantity 500 g"
+        ->
+net_quantity = "500 g"
+
+"Manufactured: 08/2026"
+        ->
+date = "08/2026"
+
+"ABC Foods Pvt Ltd"
+        ->
+manufacturer = "ABC Foods Pvt Ltd"
+
+
+C. RULE ENGINE
+--------------------------------
+Answers:
+
+"Does the available evidence satisfy the configured requirement?"
+
+The rule engine must be deterministic.
+
+Gemini must NOT be trusted to make the final legal/compliance decision.
+
+Gemini extracts and interprets information.
+
+The rule engine evaluates that information.
+
+An inspector can review the evidence and final finding.
+
+
+==================================================
+3. PERSON 4 AND PERSON 5 RESPONSIBILITIES
+==================================================
+
+PERSON 4:
+Computer Vision + OCR
+
+Responsibilities:
+
+- OpenCV preprocessing
+- image resizing
+- orientation handling
+- denoising
+- sharpening
+- contrast enhancement
+- optional perspective correction
+- EasyOCR
+- text detection
+- text recognition
+- confidence extraction
+- bounding boxes/polygons
+- OCR evidence geometry
+- stable OCR JSON
+
+
+PERSON 5:
+AI Extraction + Rules + Integration
+
+Responsibilities:
+
+- Gemini API integration
+- semantic extraction from OCR
+- declaration normalization
+- structured declaration JSON
+- compliance rule configuration
+- deterministic compliance checks
+- three-state compliance logic
+- evidence and reasoning
+- final inspection JSON
+- API integration
+
+
+This project currently focuses on the Person 5 portion while also requiring
+integration with the Computer Vision/OCR portion.
+
+
+==================================================
+4. OCR TECHNOLOGY DECISION
+==================================================
+
+PaddleOCR is NOT being used.
+
+The project will use:
+
+EASYOCR
+
+EasyOCR is responsible only for OCR.
+
+Expected OCR information:
+
+- text
+- confidence
+- bounding box / polygon
+
+Example conceptual output:
+
+[
+    {
+        "text": "MRP Rs. 120.00",
+        "confidence": 0.96,
+        "bbox": [[100,200],[400,200],[400,240],[100,240]]
+    },
+    {
+        "text": "Net Quantity 500 g",
+        "confidence": 0.94,
+        "bbox": [[100,250],[400,250],[400,290],[100,290]]
+    }
+]
+
+
+==================================================
+5. OPENCV RESPONSIBILITY
+==================================================
+
+OpenCV exists before OCR.
+
+Its job is to improve the input image so OCR has a better chance of
+detecting and recognizing text.
+
+Potential preprocessing operations:
+
+- image loading
+- resizing
+- orientation correction
+- grayscale conversion
+- denoising
+- contrast enhancement
+- sharpening
+- perspective correction
+- cropping / region processing
+
+Important:
+
+The original image must always be preserved.
+
+Preprocessing must not destroy the original evidence.
+
+Preprocessing operations should be modular rather than blindly applying
+every operation to every image.
+
+Different images may require different preprocessing.
+
+OpenCV should NOT:
+
+- perform legal decisions
+- decide compliance
+- interpret declarations semantically
+- replace OCR
+- replace Gemini
+
+
+==================================================
+6. OCR EVIDENCE
+==================================================
+
+OCR output is not just text.
+
+The system must preserve the relationship between:
+
+TEXT
+CONFIDENCE
+LOCATION
+
+Example:
+
+Text:
+"MRP Rs. 120.00"
+
+Confidence:
+0.96
+
+Bounding box:
+[[100,200],[400,200],[400,240],[100,240]]
+
+The bounding box is important because the frontend should eventually be
+able to highlight the exact evidence on the original product image.
+
+Low-confidence OCR should NOT simply be deleted.
+
+It may be useful later for REVIEW REQUIRED decisions.
+
+
+==================================================
+7. GEMINI AI RESPONSIBILITY
+==================================================
+
+Gemini receives OCR information.
+
+Its primary responsibility is semantic extraction.
+
+It should map raw OCR into predefined declaration fields.
+
+Expected fields may include:
+
+- product_name
+- manufacturer
+- packer
+- importer
+- net_quantity
+- mrp
+- manufacture_date
+- packing_date
+- import_date
+- consumer_care
+- other relevant declarations
+
+The exact final schema must remain stable once frontend/backend integration
+starts.
+
+Gemini should:
+
+- interpret OCR text
+- normalize obvious OCR variations
+- identify declaration types
+- preserve uncertainty
+- avoid guessing missing information
+- return structured JSON
+
+Gemini should NOT:
+
+- invent values
+- assume missing declarations exist
+- make unsupported legal claims
+- make the final compliance decision
+
+
+==================================================
+8. OCR NORMALIZATION
+==================================================
+
+OCR often produces imperfect text.
+
+Examples:
+
+"MRP ₹120.00"
+"MRP Rs. 120.00"
+"MRP: Rs 120"
+"M.R.P. 120"
+
+These may represent the same declaration.
+
+Similarly:
+
+"500g"
+"500 g"
+"500 G"
+"Net Qty: 500g"
+
+may represent the same net quantity information.
+
+Normalization may handle:
+
+- whitespace
+- case
+- currency symbols
+- common OCR variations
+- units
+- dates
+- common declaration keywords
+
+IMPORTANT:
+
+Raw OCR evidence must still be preserved.
+
+Never replace the original OCR text with only the normalized value.
+
+
+==================================================
+9. STRUCTURED DECLARATIONS
+==================================================
+
+After Gemini extraction, information should become structured.
+
+Conceptual example:
+
+{
+    "field": "mrp",
+    "value": "120.00",
+    "confidence": 0.97,
+    "bbox": [...]
+}
+
+Another example:
+
+{
+    "field": "net_quantity",
+    "value": "500 g",
+    "confidence": 0.94,
+    "bbox": [...]
+}
+
+The system should retain enough evidence to trace a structured value back
+to the original OCR result and image location.
+
+
+==================================================
+10. COMPLIANCE RULE ENGINE
+==================================================
+
+The rule engine is deterministic.
+
+Rules should be represented as configuration/data where practical.
+
+A rule should conceptually contain:
+
+- rule_id
+- field
+- requirement
+- validation method
+- finding message
+
+Example:
+
+RULE:
+field = mrp
+requirement = MRP declaration must be present
+validation = check whether reliable MRP evidence exists
+
+The rule engine evaluates structured declarations and evidence.
+
+
+==================================================
+11. THREE-STATE LOGIC
+==================================================
+
+The system should NOT force every result into PASS or FAIL.
+
+Use three states:
+
+1. COMPLIANT
+2. POTENTIAL NON-COMPLIANCE
+3. REVIEW REQUIRED
+
+
+COMPLIANT:
+Evidence supports that the requirement is satisfied.
+
+
+POTENTIAL NON-COMPLIANCE:
+Evidence indicates that the declaration is likely missing,
+incorrect, or potentially non-conforming.
+
+
+REVIEW REQUIRED:
+The system cannot confidently establish the result.
+
+Examples:
+
+- blurry image
+- low OCR confidence
+- ambiguous text
+- incomplete evidence
+- physical measurement cannot be reliably established
+
+
+This is important because the system is an inspector-assistance tool,
+not a system claiming perfect automatic legal judgment.
+
+
+==================================================
+12. PRACTICAL POC RULE SCOPE
+==================================================
+
+The initial POC should focus on:
+
+- mandatory declaration presence
+- MRP
+- net quantity
+- manufacturer / packer / importer
+- date / month-year
+- consumer care details
+- readability / apparent text size
+
+Do not attempt to implement every Legal Metrology provision.
+
+The POC should demonstrate a strong end-to-end workflow instead.
+
+
+==================================================
+13. FONT SIZE / READABILITY
+==================================================
+
+The system may estimate apparent text size using image geometry.
+
+For example:
+
+- text bounding-box height in pixels
+- text width
+- apparent readability
+
+However:
+
+Pixel height is NOT automatically the actual physical font size in millimetres.
+
+Actual physical measurement requires reliable calibration or known scale.
+
+Therefore:
+
+If physical measurement cannot be established reliably,
+the result should be REVIEW REQUIRED rather than pretending the
+measurement is exact.
+
+
+==================================================
+14. EVIDENCE
+==================================================
+
+Every important compliance finding should ideally contain:
+
+- field
+- status
+- reason
+- rule_id
+- confidence
+- evidence
+- bounding box where applicable
+
+Conceptual example:
+
+{
+    "field": "mrp",
+    "status": "COMPLIANT",
+    "reason": "MRP declaration detected in OCR evidence.",
+    "rule_id": "LM_MRP_001",
+    "confidence": 0.97,
+    "bbox": [...]
+}
+
+
+The frontend should eventually be able to show:
+
+IMAGE
++
+HIGHLIGHTED DECLARATION
++
+EXTRACTED VALUE
++
+CONFIDENCE
++
+RULE
++
+REASON
++
+STATUS
+
+
+==================================================
+15. FINAL INSPECTION JSON
+==================================================
+
+The backend needs a stable contract.
+
+Conceptual structure:
+
+{
+    "inspection_id": "...",
+
+    "product": {
+        "name": "...",
+        "manufacturer": "...",
+        "net_quantity": "...",
+        "mrp": "..."
+    },
+
+    "declarations": [
+        {
+            "field": "...",
+            "value": "...",
+            "confidence": 0.95,
+            "bbox": [...]
+        }
+    ],
+
+    "findings": [
+        {
+            "field": "...",
+            "status": "COMPLIANT",
+            "reason": "...",
+            "rule_id": "...",
+            "confidence": 0.95
+        }
+    ],
+
+    "overall_status": "..."
+}
+
+
+IMPORTANT:
+
+Do not casually change field names after frontend/backend integration
+begins.
+
+The JSON contract should remain stable.
+
+
+==================================================
+16. MODULE INTERFACES
+==================================================
+
+The conceptual interfaces are:
+
+preprocess_image()
+    Input:
+        image bytes/path
+
+    Output:
+        processed image + geometry metadata
+
+
+run_ocr()
+    Input:
+        processed image
+
+    Output:
+        text + confidence + bounding boxes
+
+
+extract_declarations()
+    Input:
+        OCR JSON
+
+    Output:
+        structured declarations
+
+
+evaluate_compliance()
+    Input:
+        declarations + evidence + rules
+
+    Output:
+        findings + overall_status
+
+
+run_inspection()
+    Input:
+        image
+
+    Output:
+        final inspection JSON
+
+
+==================================================
+17. COMPLETE SYSTEM FLOW
+==================================================
+
+1. User uploads product image.
+
+2. Original image is preserved.
+
+3. OpenCV preprocesses the image.
+
+4. EasyOCR detects and recognizes visible text.
+
+5. OCR returns:
+   - text
+   - confidence
+   - bounding boxes/polygons
+
+6. OCR results are normalized into a stable internal format.
+
+7. Gemini receives OCR information.
+
+8. Gemini identifies declaration fields.
+
+9. Structured declarations are generated.
+
+10. Deterministic rule engine evaluates configured requirements.
+
+11. Each finding receives:
+    - status
+    - reason
+    - rule_id
+    - confidence
+    - evidence
+
+12. Final inspection JSON is generated.
+
+13. FastAPI exposes the inspection functionality.
+
+14. Frontend displays:
+    - original image
+    - evidence regions
+    - extracted values
+    - compliance findings
+    - reasons
+    - confidence
+    - review status
+
+
+==================================================
+18. API
+==================================================
+
+The eventual main API endpoint is conceptually:
+
+POST /api/inspect
+
+Input:
+
+Product image
+
+Output:
+
+Final inspection JSON
+
+
+The API is an integration layer.
+
+FastAPI should not contain all business logic.
+
+The pipeline should remain modular so that individual components can
+be tested independently.
+
+
+==================================================
+19. FAILURE / FALLBACK STRATEGY
+==================================================
+
+The system must handle imperfect real-world images.
+
+Possible failures:
+
+- blurry image
+- poor lighting
+- rotated package
+- perspective distortion
+- OCR failure
+- low OCR confidence
+- Gemini unavailable
+- API failure
+- incomplete declaration information
+
+The system should not fabricate results.
+
+If Gemini is unavailable, a fallback can use OCR plus keyword/regex-based
+extraction for basic declarations.
+
+If live OCR/API functionality fails during the POC demo, pre-tested package
+images may be used through the SAME pipeline.
+
+Fallbacks should still produce understandable evidence and uncertainty.
+
+
+==================================================
+20. WHAT WE ARE NOT BUILDING
+==================================================
+
+Do NOT spend time on:
+
+- custom OCR model training
+- custom AI model training
+- RAG/vector database unless the core system is already complete
+- blockchain
+- mobile application
+- nationwide deployment
+- automatic challan generation
+- automatic prosecution
+- automatic fine generation
+- claims of 100% legal accuracy
+- implementation of every Legal Metrology provision
+- unnecessary duplicate frontend work
+
+
+==================================================
+21. PRIORITY
+==================================================
+
+P0:
+End-to-end working pipeline.
+
+P1:
+Bounding boxes, evidence and core declarations.
+
+P2:
+Three-state compliance logic.
+
+P3:
+FastAPI and frontend integration.
+
+P4:
+Readability / apparent text-size analysis.
+
+P5:
+Extra features only if the core system is already stable.
+
+
+==================================================
+22. DEFINITION OF DONE
+==================================================
+
+The core system is considered successful when:
+
+ONE PRODUCT IMAGE
+
+can go through:
+
+OpenCV
+    ->
+EasyOCR
+    ->
+OCR evidence
+    ->
+structured declarations
+    ->
+deterministic compliance findings
+    ->
+stable JSON
+    ->
+website evidence viewer
+
+
+A judge should be able to see:
+
+1. Actual package image.
+2. Detected declaration regions.
+3. Extracted values.
+4. Reason for each finding.
+5. Relevant configured requirement/rule.
+6. Confidence/uncertainty.
+7. Inspector review flow.
+
+
+==================================================
+23. DEVELOPMENT PRINCIPLES
+==================================================
+
+1. Build modularly.
+
+2. Preserve raw evidence.
+
+3. Never hide uncertainty.
+
+4. Do not let AI make the final legal decision.
+
+5. Prefer deterministic rules for compliance evaluation.
+
+6. Keep JSON contracts stable.
+
+7. Test every component independently.
+
+8. Do not over-engineer the POC.
+
+9. Do not build features outside the assigned scope until the core
+   pipeline works.
+
+10. The final goal is not "AI that says legal/illegal".
+
+The final goal is:
+
+AI-assisted evidence extraction
++
+deterministic compliance evaluation
++
+transparent inspector review.
+
+
+==================================================
+24. CURRENT TECHNOLOGY STACK
+==================================================
+
+Language:
+Python
+
+Computer Vision:
+OpenCV
+
+OCR:
+EasyOCR
+
+AI:
+Gemini API
+
+Backend:
+FastAPI
+
+Validation / schemas:
+Pydantic
+
+Utilities:
+NumPy
+Pillow
+python-dateutil
+regex
+requests
+
+Optional later:
+ReportLab for PDF reports
+
+
+==================================================
+25. IMPORTANT CURRENT DECISION
+==================================================
+
+PaddleOCR has been dropped.
+
+EasyOCR is the selected OCR engine.
+
+The current development should therefore NOT install or import:
+
+- PaddleOCR
+- PaddlePaddle
+
+The implementation should be designed around EasyOCR output while
+keeping the OCR interface modular enough that the rest of the system
+does not depend directly on EasyOCR-specific internals.
+
+
+==================================================
+END OF UNDERSTANDING DOCUMENT
+==================================================

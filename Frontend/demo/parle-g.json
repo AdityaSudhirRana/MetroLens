@@ -1,0 +1,49 @@
+{
+  "status": "success",
+  "ocr_text": "PARLE-G ORIGINAL GLUCOSE BISCUITS\nNet Wt: 800 g\nMFR: Parle Products Pvt Ltd, Vile Parle East, Mumbai - 400057, Maharashtra\nMRP: Rs. 80.00 (Incl. of all taxes)\nBatch No: PRG2026B12\nPkd Date: 01/2026\nExpiry/Best Before: 6 months from packaging\nConsumer Care: 1800-22-7275, customercare@parle.biz\nCountry of Origin: India",
+  "confidence_score": 96.4,
+  "fields": {
+    "manufacturer": {
+      "value": "Parle Products Pvt Ltd, Vile Parle East, Mumbai - 400057, Maharashtra",
+      "confidence": 98.2,
+      "bounding_box": [120, 45, 620, 85],
+      "status": "Verified"
+    },
+    "product_name": {
+      "value": "Parle-G Original Glucose Biscuits",
+      "confidence": 99.1,
+      "bounding_box": [30, 20, 750, 90],
+      "status": "Verified"
+    },
+    "net_quantity": {
+      "value": "800 g",
+      "confidence": 95.8,
+      "bounding_box": [210, 110, 380, 140],
+      "status": "Verified"
+    },
+    "mrp": {
+      "value": "80.00",
+      "confidence": 97.4,
+      "bounding_box": [450, 110, 680, 140],
+      "status": "Verified"
+    },
+    "mfd_date": {
+      "value": "01/2026",
+      "confidence": 94.0,
+      "bounding_box": [110, 160, 310, 190],
+      "status": "Verified"
+    },
+    "consumer_care": {
+      "value": "1800-22-7275, customercare@parle.biz",
+      "confidence": 93.5,
+      "bounding_box": [50, 210, 720, 245],
+      "status": "Verified"
+    },
+    "country_of_origin": {
+      "value": "India",
+      "confidence": 98.0,
+      "bounding_box": [330, 160, 510, 190],
+      "status": "Verified"
+    }
+  }
+}

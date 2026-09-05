@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Group -->
+  <g transform="translate(10, 10)">
+    <!-- Shield Container -->
+    <path d="M40 5 L72 18 V45 C72 65 40 77 40 77 C40 77 8 65 8 45 V18 Z" fill="url(#logoGrad)" />
+    <!-- Package Box -->
+    <path d="M40 22 L58 31 V52 L40 61 L22 52 V31 Z" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" />
+    <path d="M40 22 V61 M58 31 L40 40 L22 31" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- AI Scan Lines -->
+    <path d="M26 18 H20 V24 M54 18 H60 V24 M20 54 V60 H26 M60 54 V60 H54" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" />
+    <!-- Compliance Check Badge -->
+    <circle cx="58" cy="58" r="10" fill="url(#accentGrad)" stroke="#ffffff" stroke-width="2" />
+    <path d="M53 58 L57 62 L63 54" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <!-- Brand Text -->
+  <text x="100" y="45" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#1e3a8a" letter-spacing="-0.5">AI PACKAGE</text>
+  <text x="100" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#059669" letter-spacing="1.5">INSPECTOR</text>
+  <text x="100" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748b" letter-spacing="0.5">LEGAL METROLOGY COMPLIANCE SYSTEM</text>
+</svg>

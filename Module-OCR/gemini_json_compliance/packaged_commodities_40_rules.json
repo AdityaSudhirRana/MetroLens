@@ -1,0 +1,370 @@
+{
+  "document": "ruls.pdf",
+  "subject": "Legal Metrology (Packaged Commodities) Rules, 2011",
+  "purpose": "40 easy-to-understand rules extracted and explained from the uploaded PDF.",
+  "language": "Simple English with Hinglish-style explanations",
+  "important_note": "This JSON is an educational, simplified explanation of the uploaded document. It is not a substitute for the official legal text or legal advice. Product-specific exceptions, amendments and current law should be checked before compliance decisions.",
+  "rule_count": 40,
+  "rules": [
+    {
+      "id": 1,
+      "rule_reference": "Rule 1",
+      "title": "Name and commencement of the Rules",
+      "simple_explanation": "Ye document Legal Metrology (Packaged Commodities) Rules, 2011 ke naam se jaana jaata hai. Rules 1 April 2011 se effective hue. Simple words mein, packaged commodities ke liye ye legal framework hai jisme package par kya information deni hai, quantity kaise declare karni hai, MRP kaise show karna hai, aur compliance kaise check hogi—ye sab cover hota hai.",
+      "example": "Agar koi company packaged food, cosmetic ya household product retail sale ke liye pack karti hai, to applicable requirements ko in Rules ke according dekhna hoga.",
+      "why_it_matters": "Isse document ka legal scope aur starting date clear hoti hai.",
+      "source_page": 37
+    },
+    {
+      "id": 2,
+      "rule_reference": "Rule 2",
+      "title": "Understand who is a dealer",
+      "simple_explanation": "Dealer ka matlab broadly aisa person ya firm hai jo packaged commodity ko buy, sell, supply ya distribute karta hai. Ye cash sale ke saath deferred payment, commission, remuneration ya other valuable consideration wale transactions ko bhi cover karta hai. Isliye sirf traditional shopkeeper hi relevant nahi hota; supply/distribution chain mein kaam karne wale businesses bhi scope mein aa sakte hain.",
+      "example": "Wholesaler jo packaged goods retailers ko supply karta hai dealer category mein aa sakta hai.",
+      "why_it_matters": "Compliance sirf manufacturer tak limited nahi rehti; supply chain ke different participants ki responsibilities ho sakti hain.",
+      "source_page": 37
+    },
+    {
+      "id": 3,
+      "rule_reference": "Rule 2",
+      "title": "Meaning of manufacturer",
+      "simple_explanation": "Manufacturer wo person ya firm hai jo packaged commodity produce, make ya manufacture karta hai, ya kisi mark ko commodity par lagwata hai aur package mein commodity ko produced/made/manufactured hone ka claim karta hai. Practical meaning: jo entity product ki manufacturing ya manufacturing identity ke liye responsible hai, uski role ko rules specifically recognize karte hain.",
+      "example": "A company apne brand naam se product manufacture karwati hai aur package par apna brand/manufacturing claim karti hai; applicable circumstances mein manufacturer-related responsibility arise ho sakti hai.",
+      "why_it_matters": "Manufacturer ki identity decide karna declarations aur compliance responsibility ke liye important hai.",
+      "source_page": 38
+    },
+    {
+      "id": 4,
+      "rule_reference": "Rule 2",
+      "title": "Maximum permissible error",
+      "simple_explanation": "Maximum permissible error (MPE) ka concept batata hai ki declared quantity ke comparison mein kitni deficiency legally permitted limit ke andar ho sakti hai, subject to the Rules and First Schedule. Iska matlab ye nahi hai ki company intentionally kam quantity de sakti hai; ye measurement/packaging variation ke liye prescribed tolerance concept hai.",
+      "example": "Agar package par quantity declare ki gayi hai, inspection mein actual quantity ko prescribed permissible-error limits ke against evaluate kiya ja sakta hai.",
+      "why_it_matters": "Quantity inspection ko fixed legal tolerance ke saath assess karne ka basis milta hai.",
+      "source_page": 38
+    },
+    {
+      "id": 5,
+      "rule_reference": "Rule 2",
+      "title": "Meaning of net quantity",
+      "simple_explanation": "Net quantity ka focus actual commodity par hai. Package, wrapper ya packing material ka weight/volume commodity ki declared net quantity ka part nahi maana jaata. Consumer ko product ki actual quantity samajh aani chahiye, packaging ka weight nahi.",
+      "example": "500 g food product ka declared net quantity product ki quantity honi chahiye, packet/carton ka weight add karke 500 g nahi maana jaata.",
+      "why_it_matters": "Consumer ko exactly kitna product mil raha hai, ye clear hota hai.",
+      "source_page": 38
+    },
+    {
+      "id": 6,
+      "rule_reference": "Rule 2",
+      "title": "Principal display panel",
+      "simple_explanation": "Principal display panel package ka wo main visible area hai jahan Rules ke required declarations ko prescribed manner mein show kiya jaana hai. Information ko scattered ya hidden rakhne ke bajay consumer-facing display area par properly present karna important hai.",
+      "example": "Product ka main front-facing label area required quantity aur other declarations ke display ke liye use ho sakta hai.",
+      "why_it_matters": "Important information consumer ko easily visible aur understandable honi chahiye.",
+      "source_page": 39
+    },
+    {
+      "id": 7,
+      "rule_reference": "Rule 2",
+      "title": "Retail package",
+      "simple_explanation": "Retail package wo package hai jo ultimate consumer ko commodity consume karne ke purpose se retail sale ke liye intended hota hai. Industrial aur institutional consumers ko definition mein specifically distinguish kiya gaya hai.",
+      "example": "Supermarket shelf par consumer ke liye rakha hua packaged product retail-package context mein aata hai.",
+      "why_it_matters": "Retail packages ke liye Chapter II ki specific declaration requirements apply hoti hain.",
+      "source_page": 39
+    },
+    {
+      "id": 8,
+      "rule_reference": "Rule 2",
+      "title": "Retail sale price / MRP",
+      "simple_explanation": "Retail sale price wo maximum price hai jiske upar packaged commodity ko ultimate consumer ko sell nahi kiya jaana chahiye under the applicable rule framework. Document mein price ko taxes inclusive form mein print karne ka prescribed format diya gaya hai.",
+      "example": "Package par 'Maximum or Max. retail price Rs....' type declaration prescribed manner mein diya jaata hai.",
+      "why_it_matters": "Consumer ko maximum applicable retail price clearly pata chalti hai.",
+      "source_page": 40
+    },
+    {
+      "id": 9,
+      "rule_reference": "Rule 2",
+      "title": "Wholesale package",
+      "simple_explanation": "Wholesale package ek aisa package hai jo generally multiple retail packages contain kar sakta hai aur intermediary ko sale/distribution/delivery ke liye intended hota hai. Ye single ultimate consumer ko direct retail sale ke same purpose wala package nahi hota.",
+      "example": "Ek carton ke andar 24 individually packed retail products hain aur carton retailer/distributor ko supply hota hai.",
+      "why_it_matters": "Wholesale packaging ke liye separate declaration requirements Rule 24 mein di gayi hain.",
+      "source_page": 40
+    },
+    {
+      "id": 10,
+      "rule_reference": "Rule 3",
+      "title": "Scope of retail-package provisions",
+      "simple_explanation": "Chapter II ki retail-package provisions har type ke package par automatically apply nahi hoti. Document specifically excludes certain large-quantity packages, including commodities above 25 kg or 25 litre, with the stated exception for cement and fertilizer bags up to 50 kg, and packages meant for industrial or institutional consumers.",
+      "example": "A large industrial-consumer package may fall outside the Chapter II retail-package provisions, depending on the exact facts and category.",
+      "why_it_matters": "Correct compliance requirements identify karne ke liye package ka intended consumer aur quantity important hai.",
+      "source_page": 41
+    },
+    {
+      "id": 11,
+      "rule_reference": "Rule 4",
+      "title": "No pre-packing without required declarations",
+      "simple_explanation": "Rules ke commencement ke baad packaged commodity ko sale, distribution ya delivery ke liye pre-pack karna tabhi permitted framework mein hona chahiye jab required declarations package par present hon. Manufacturer ke premises se packages destination ki taraf jaate waqt required retail-sale-price declaration ka requirement bhi addressed hai.",
+      "example": "Factory se retail market ke liye dispatch hone wale package ko required declarations ke bina intentionally market-ready nahi banana chahiye.",
+      "why_it_matters": "Consumer-facing package information manufacturing/dispatch stage se hi controlled rehti hai.",
+      "source_page": 41
+    },
+    {
+      "id": 12,
+      "rule_reference": "Rule 5",
+      "title": "Recommended standard pack sizes",
+      "simple_explanation": "Second Schedule mein specified commodities ke liye recommended/required standard quantities di gayi hain. Agar specified commodity ko Schedule mein diye standard size se different size mein pack kiya jaata hai, to package par prominently indicate karna hota hai ki ye 'Not a standard pack size' hai, as prescribed.",
+      "example": "A commodity ke liye Schedule mein specified standard quantities hain; manufacturer agar different pack size choose karta hai, to applicable non-standard declaration required ho sakti hai.",
+      "why_it_matters": "Standard pack sizes se comparison easy hota hai aur non-standard quantity consumer se hide nahi hoti.",
+      "source_page": 42
+    },
+    {
+      "id": 13,
+      "rule_reference": "Rule 6(1)(a)",
+      "title": "Manufacturer name and address",
+      "simple_explanation": "Every applicable package par manufacturer ka name aur complete address clearly declared hona chahiye. Agar manufacturer packer nahi hai, to manufacturer aur packer dono ki relevant identity/address requirements apply hoti hain. Imported packages ke liye importer ka name/address bhi required declaration framework ka part hai.",
+      "example": "A retail package can identify the manufacturer and, where applicable, packer/importer with the required address details.",
+      "why_it_matters": "Consumer aur authorities ko responsible business entity identify karne ka clear route milta hai.",
+      "source_page": 42
+    },
+    {
+      "id": 14,
+      "rule_reference": "Rule 6(1)(b)",
+      "title": "Commodity name / generic name",
+      "simple_explanation": "Package par commodity ka common ya generic name mention karna hota hai. Agar package mein more than one product hai, to each product ka name aur quantity/number as required declare karna hota hai. Sirf brand name se consumer ko product ki actual identity confuse nahi honi chahiye.",
+      "example": "A branded packet should still identify the commodity itself, not just the brand.",
+      "why_it_matters": "Consumer ko pata chalta hai ki package ke andar actual commodity kya hai.",
+      "source_page": 43
+    },
+    {
+      "id": 15,
+      "rule_reference": "Rule 6(1)(c)",
+      "title": "Net quantity declaration",
+      "simple_explanation": "Package mein contained commodity ki net quantity standard unit of weight, measure, ya number ke terms mein declare karni hoti hai, depending on the commodity. Quantity ka declaration actual contents ko represent karna chahiye, packaging material ko nahi.",
+      "example": "Food sold by weight should show the applicable net weight, while a product sold by number can declare the number of pieces.",
+      "why_it_matters": "Consumer ko product quantity ka direct and measurable statement milta hai.",
+      "source_page": 43
+    },
+    {
+      "id": 16,
+      "rule_reference": "Rule 6(1)(d)",
+      "title": "Month and year of manufacture / pre-packing / import",
+      "simple_explanation": "Applicable package par commodity ke manufacture, pre-packing ya import ka month and year mention karna hota hai. Document mein certain categories ke liye specific exceptions/provisions bhi diye gaye hain, so exact product category ke according treatment check karna important hai.",
+      "example": "A package can show the relevant month and year in words, numbers, or both as permitted by the Rules.",
+      "why_it_matters": "Product timing information consumer ko product ki age/production context samajhne mein help karti hai.",
+      "source_page": 43
+    },
+    {
+      "id": 17,
+      "rule_reference": "Rule 6(1)(e)",
+      "title": "Retail sale price must be declared",
+      "simple_explanation": "Package par retail sale price declare karna required hai, subject to the exceptions and special provisions in the Rules. The declaration is intended to communicate the maximum retail price applicable to the packaged commodity.",
+      "example": "Package par prescribed MRP format mein price show kiya jaata hai.",
+      "why_it_matters": "Consumer ko price transparency milti hai aur pricing dispute ka risk reduce hota hai.",
+      "source_page": 44
+    },
+    {
+      "id": 18,
+      "rule_reference": "Rule 6(2)",
+      "title": "Consumer complaint contact details",
+      "simple_explanation": "Package par name, address, telephone number, email address if available, of the person/office that consumers can contact for complaints is required. Iska purpose simple hai: agar product ya declaration mein problem aaye, consumer ke paas complaint/contact ka identifiable route ho.",
+      "example": "Customer-care contact details package label par clearly provided ho sakte hain.",
+      "why_it_matters": "Consumer grievance ko responsible entity tak pahunchane ka direct mechanism banta hai.",
+      "source_page": 46
+    },
+    {
+      "id": 19,
+      "rule_reference": "Rule 6(3)",
+      "title": "Sticker cannot normally be used to alter required declarations",
+      "simple_explanation": "Package par required declarations ko change ya alter karne ke liye individual stickers ka arbitrary use prohibited framework mein aata hai. Document specifically revised lower MRP ke liye prescribed exception deta hai, jahan revised lower MRP ka sticker affix kiya ja sakta hai without covering the original manufacturer's/packer declaration.",
+      "example": "Sirf convenient correction ke liye original required information ko random sticker se cover nahi kiya jaana chahiye.",
+      "why_it_matters": "Labels ko manipulate karke consumer ko misleading information dene se protection milti hai.",
+      "source_page": 46
+    },
+    {
+      "id": 20,
+      "rule_reference": "Rule 7",
+      "title": "Required information must have adequate letter size",
+      "simple_explanation": "Principal display panel par declarations ke numerals/letters prescribed minimum height requirements ko meet karne chahiye. Quantity aur display-panel size ke according minimum heights First/related tables mein specified hain. Matlab information sirf present hona enough nahi; itni readable size mein bhi honi chahiye ki consumer usse identify kar sake.",
+      "example": "Very small package text ko itna tiny nahi rakhna chahiye ki declared quantity practically unreadable ho.",
+      "why_it_matters": "Visibility and readability consumer protection ka core part hai.",
+      "source_page": 47
+    },
+    {
+      "id": 21,
+      "rule_reference": "Rule 8",
+      "title": "Where declarations must appear",
+      "simple_explanation": "Required declarations ko principal display panel par place karna hota hai. Quantity declaration ke around adequate clear space hona chahiye, aur soft-drink/ready-to-serve type returnable bottles ke liye retail sale price ko prescribed locations/form mein indicate karne ke special provisions diye gaye hain.",
+      "example": "Important quantity information ko crowded graphics ke beech hide karne ke bajay prescribed display area mein clear space ke saath show karna chahiye.",
+      "why_it_matters": "Consumer ko critical information locate karne mein difficulty nahi hoti.",
+      "source_page": 48
+    },
+    {
+      "id": 22,
+      "rule_reference": "Rule 9",
+      "title": "Declarations must be legible and prominent",
+      "simple_explanation": "Required package declarations legible aur prominent honi chahiye. Retail sale price aur net quantity ke numerals ko package background se conspicuously contrasting colour mein print/paint/inscribe karna required framework ka part hai. Handwritten declarations, where permitted, clear, unambiguous and legible honi chahiye.",
+      "example": "Dark background par dark text use karke MRP/quantity ko almost invisible banana compliant presentation nahi hai.",
+      "why_it_matters": "Consumer ko label padhne ke liye guesswork nahi karna pade.",
+      "source_page": 49
+    },
+    {
+      "id": 23,
+      "rule_reference": "Rule 9(2)-(3)",
+      "title": "Do not place declarations where liquid can wash them away",
+      "simple_explanation": "Package declarations ko aise place/present nahi karna chahiye ki commodity ke liquid contact se information erase ho jaaye. Agar package ke outside wrapper/container ka use hai, to required declarations generally outside presentation mein bhi appropriately available honi chahiye, subject to the transparency/readability conditions in the rule.",
+      "example": "Liquid-filled package par label aisi jagah nahi hona chahiye jahan normal contact se mandatory information unreadable ho jaaye.",
+      "why_it_matters": "Important legal information product use/storage ke baad bhi readable rehni chahiye.",
+      "source_page": 49
+    },
+    {
+      "id": 24,
+      "rule_reference": "Rule 10",
+      "title": "Manufacturer/packer/importer identity must be clear",
+      "simple_explanation": "Package par manufacturer ka name aur complete address clearly declared hona chahiye; where applicable packer/importer ki identity bhi. Very small packages ke liye limited identification provision diya gaya hai. Imported goods ko India mein pack kiya gaya ho to Indian packer/importer details ka specific requirement bhi document address karta hai.",
+      "example": "Imported commodity ke Indian package par responsible Indian packer/importer ko identify karne wali information required ho sakti hai.",
+      "why_it_matters": "Consumer aur enforcement authority ko responsible entity trace karna easy hota hai.",
+      "source_page": 50
+    },
+    {
+      "id": 25,
+      "rule_reference": "Rule 11",
+      "title": "Exclude wrappers and packing materials from net quantity",
+      "simple_explanation": "Net quantity declare karte waqt commodity ke alawa wrappers aur other packing materials ka weight exclude karna hota hai. Agar commodity normal conditions mein environmental reasons se significantly vary nahi karti, declared quantity ko consumer ko receive hone wali net quantity correspond karni chahiye.",
+      "example": "500 g net product ka declaration packet ke total gross weight ko represent nahi kar sakta.",
+      "why_it_matters": "Consumer ko packaging ke weight ke liye pay nahi karna chahiye as if it were product quantity.",
+      "source_page": 51
+    },
+    {
+      "id": 26,
+      "rule_reference": "Rule 12",
+      "title": "Quantity must use the correct measurement basis",
+      "simple_explanation": "Quantity declaration weight, measure, number, ya appropriate combination ke terms mein honi chahiye. Commodity ki nature ke according mass, length, area, volume, ya number use kiya jaata hai. Rules ka aim hai ki unit aisi ho jo consumer ko actual quantity ke baare mein accurate information de.",
+      "example": "Solid commodity generally weight by mass, linear commodity length, area-based commodity area, liquid/cubic commodity volume, and countable items number se declare kiye ja sakte hain, subject to the Schedule exceptions.",
+      "why_it_matters": "Wrong unit use karne se quantity technically present hone ke baad bhi misleading ho sakti hai.",
+      "source_page": 52
+    },
+    {
+      "id": 27,
+      "rule_reference": "Rule 12(5)-(7)",
+      "title": "Do not use misleading quantity words",
+      "simple_explanation": "Quantity declaration mein 'minimum', 'not less than', 'average', 'about', 'approximately' jaise words ya similar expressions use karke declared quantity ko vague/misleading banana prohibited framework ka part hai. Very small packages ke liye quantity declaration aur manufacturer/packer identification ko tag/card/tape jaise device par prescribed manner mein attach karne ka provision hai.",
+      "example": "Instead of a clear declared quantity, 'approximately 500 g' likhkar quantity ko intentionally vague banana allowed framework ke against ho sakta hai.",
+      "why_it_matters": "Consumer ko exact declared quantity ka clear understanding milta hai.",
+      "source_page": 53
+    },
+    {
+      "id": 28,
+      "rule_reference": "Rule 13",
+      "title": "Use prescribed units of weight, measure or number",
+      "simple_explanation": "Package par quantity ke liye International System of Units (SI) ke prescribed units use karne hote hain. Rules small quantities ke liye conversions/sub-units bhi specify karte hain—for example kilogram with gram, metre with centimetre, litre with millilitre, etc. Non-SI symbols ko use karne par restriction bhi stated hai.",
+      "example": "Quantity declaration ko prescribed SI-based unit format mein present karna chahiye.",
+      "why_it_matters": "Standard units se consumers ko different brands/products compare karna easy hota hai.",
+      "source_page": 53
+    },
+    {
+      "id": 29,
+      "rule_reference": "Rule 14",
+      "title": "Declare dimensions for specified commodities",
+      "simple_explanation": "Bedsheets, handkerchiefs, fabric materials, dhotis, sarees, napkins, pillow-covers, towels, table cloths and similar commodities ke liye package par finished size/dimensions declare karni hoti hain. Agar package mein different dimensions ke multiple pieces hain, to each relevant piece ki dimensions aur retail sale price ke applicable declarations bhi required ho sakte hain.",
+      "example": "A textile package should not merely say '1 piece'; where Rule 14 applies, its finished dimensions need to be declared.",
+      "why_it_matters": "Consumer product size ko purchase se pehle clearly understand kar sakta hai.",
+      "source_page": 55
+    },
+    {
+      "id": 30,
+      "rule_reference": "Rule 15",
+      "title": "Declare dimensions/weight where they affect price",
+      "simple_explanation": "Jahan commodity ki dimensions, weight, ya combination ka direct relationship us commodity ki price se hai, package par quantity ke saath relevant dimensions/weight/combination declare karna required hai. Ye rule un products ko address karta hai jahan size/weight pricing ko materially affect karta hai.",
+      "example": "A product whose price depends on measurable size/weight may need both the quantity and relevant dimension/weight information.",
+      "why_it_matters": "Consumer ko price aur quantity ke relationship ko understand karne ke liye sufficient information milti hai.",
+      "source_page": 55
+    },
+    {
+      "id": 31,
+      "rule_reference": "Rule 16",
+      "title": "Declare usable sheets and sheet dimensions",
+      "simple_explanation": "Aluminium foil, facial tissues, waxed paper, toilet paper aur similar sheet products ke package par usable sheets ki number aur each sheet ki dimensions declare karni hoti hain. Sirf total pack size batana enough nahi hai jab Rule 16 apply hota hai.",
+      "example": "A tissue/foil package can need a declaration of the number of usable sheets and their dimensions.",
+      "why_it_matters": "Consumer ko actual usable quantity aur sheet size dono ka clear idea milta hai.",
+      "source_page": 56
+    },
+    {
+      "id": 32,
+      "rule_reference": "Rule 17",
+      "title": "Declare quantity for container-type commodities",
+      "simple_explanation": "Bags, boxes, cups, pans and similar container-type commodities ke liye package par quantity declaration prescribed manner mein deni hoti hai. Shape ke according number of bags/containers aur relevant dimensions such as length, width, depth, diameter etc. mention karne ka framework diya gaya hai.",
+      "example": "For a bag-type commodity, the package can require the number of bags followed by their linear dimensions.",
+      "why_it_matters": "Container ka count aur physical dimensions consumer ko product capacity/size samajhne mein help karte hain.",
+      "source_page": 56
+    },
+    {
+      "id": 33,
+      "rule_reference": "Rule 18(1)-(2)",
+      "title": "Retailer cannot sell non-compliant packages",
+      "simple_explanation": "Retail dealer/wholesale dealer/importer ko packaged commodity ko sale, distribution, delivery ya display ke liye tabhi handle karna chahiye jab package Act aur Rules ke provisions ke according compliant ho. Retail dealer kisi commodity ko declared retail sale price se zyada price par sell nahi kar sakta.",
+      "example": "A shop should not knowingly sell a package that lacks required declarations, and should not charge above the applicable declared retail sale price.",
+      "why_it_matters": "Compliance responsibility manufacturing ke baad retail stage tak continue hoti hai.",
+      "source_page": 57
+    },
+    {
+      "id": 34,
+      "rule_reference": "Rule 18(3)-(6)",
+      "title": "Do not manipulate marked retail price",
+      "simple_explanation": "Pre-packed commodity par manufacturer/packer/importer ne jo retail price indicate ki hai, retailer ya other person ko usse smear, alter, obliterate ya tamper nahi karna chahiye. Price revision ke cases mein Rules specific procedures provide karte hain, including prescribed communication/publication requirements and conditions for revised prices.",
+      "example": "Retailer apni convenience ke liye original MRP ko scratch karke naya price nahi likh sakta.",
+      "why_it_matters": "Price transparency aur anti-tampering protection maintain hoti hai.",
+      "source_page": 58
+    },
+    {
+      "id": 35,
+      "rule_reference": "Rule 18(7)",
+      "title": "Specified retailers must maintain an accurate weighing machine",
+      "simple_explanation": "Rule mein covered VAT/TOT retailers dealing with commodities whose net quantity is declared by weight/volume or combination are required to maintain an electronic weighing machine of at least the prescribed accuracy class, with a facility for a printed receipt indicating gross quantity, price and related information. The machine is intended for consumer benefit and checking.",
+      "example": "A covered retailer selling packaged commodities by declared quantity can use the prescribed weighing setup so a consumer can verify the weight.",
+      "why_it_matters": "Consumer ko purchased packaged commodity ki quantity check karne ka practical mechanism milta hai.",
+      "source_page": 58
+    },
+    {
+      "id": 36,
+      "rule_reference": "Rule 19",
+      "title": "Authorities can inspect package lots at manufacturer/packer premises",
+      "simple_explanation": "Authorized Director, Controller or Legal Metrology Officer package lots inspect kar sakte hain to verify quantity and compliance. Samples prescribed manner mein liye ja sakte hain aur tests relevant schedules/methods ke according conduct hote hain. Examination ka purpose ye determine karna hai ki package declarations aur actual contents rules ke saath match karte hain ya nahi.",
+      "example": "An officer can select representative packages from a lot and test the net quantity.",
+      "why_it_matters": "Rules sirf label checking nahi karte; actual contents ki measurement bhi verify ho sakti hai.",
+      "source_page": 59
+    },
+    {
+      "id": 37,
+      "rule_reference": "Rule 19(4)-(6)",
+      "title": "A lot may be approved, checked or subjected to corrective action",
+      "simple_explanation": "Inspection/testing ke result ke basis par lot ka treatment decide hota hai. Agar statistical average declared quantity se kam ho ya individual packages mein deficiency maximum permissible error se zyada ho, fresh testing aur further action ho sakta hai. Conforming packages ko sale/distribution ke liye authorize kiya ja sakta hai, while non-conforming packages ko re-pack/re-process/re-label karna pad sakta hai as applicable.",
+      "example": "A lot that fails quantity checks may not simply be released unchanged; corrective compliance can be required.",
+      "why_it_matters": "System batch-level quality control ko legal enforcement se connect karta hai.",
+      "source_page": 60
+    },
+    {
+      "id": 38,
+      "rule_reference": "Rule 21",
+      "title": "Retail/wholesale premises inspections are generally limited but can be triggered",
+      "simple_explanation": "Normally packaged quantity ka test retail/wholesale dealer ke premises par nahi kiya jaata. Lekin complaint, suspected tampering/pilferage/leakage, ya required declarations missing hone ka reason ho to authorized officer inspection/testing kar sakta hai. Agar actual deficiency maximum permissible error se zyada ho, appropriate action can follow.",
+      "example": "A consumer complaint that a package contains less quantity than declared can become a basis for inspection.",
+      "why_it_matters": "Consumers ko complaint-based enforcement protection milti hai.",
+      "source_page": 63
+    },
+    {
+      "id": 39,
+      "rule_reference": "Rule 22",
+      "title": "Maximum permissible error is based on the First Schedule",
+      "simple_explanation": "Rules package quantity ke liye maximum permissible error ko First Schedule se connect karte hain. Error determine karte waqt normal packing variation, ordinary exposure to climate/transport/storage conditions, aur packaging material/container ki nature jaise factors consider kiye ja sakte hain. 'When packed' cases ke liye environmental variation ko bhi prescribed manner mein consider kiya ja sakta hai.",
+      "example": "A permitted tolerance is not one universal number for every commodity; the applicable schedule/category has to be checked.",
+      "why_it_matters": "Quantity compliance ko commodity-specific legal tolerance ke basis par judge kiya jaata hai.",
+      "source_page": 65
+    },
+    {
+      "id": 40,
+      "rule_reference": "Rules 23-34",
+      "title": "Deceptive packages, wholesale declarations, registration and penalties",
+      "simple_explanation": "Document ke later rules enforcement aur business registration ko cover karte hain. Deceptive packages ko re-pack/re-label ya seize kiya ja sakta hai. Wholesale packages par manufacturer/importer/packer identity, commodity identity aur total number/net quantity of retail packages jaise declarations required hain. Export packages ko India mein sell karne se pehle prescribed re-packing/re-labelling requirements apply ho sakti hain. Manufacturers, packers and importers ko registration framework follow karna hota hai, including application details and registration certificate. Rules 31-32 advertising declarations and penalties ko address karte hain, Rule 33 relaxation power provide karta hai, and Rule 34 repeal/savings provisions deal karta hai.",
+      "example": "A manufacturer/packer/importer may need registration; a deceptive package can face corrective/enforcement action; an advertisement mentioning retail sale price must also include the required quantity/number declaration.",
+      "why_it_matters": "Ye group dikhata hai ki framework sirf label design tak limited nahi hai—registration, inspection, enforcement, advertising, wholesale packages aur penalties bhi covered hain.",
+      "source_page": 66
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "image_id": "chip2",
+  "source_image": {
+    "path": "OCR/real-world-images/chip2.jpeg",
+    "width": 960,
+    "height": 1280
+  },
+  "processed_image": {
+    "path": "OCR/real-world-images/chip2_processed.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  "annotated_image": {
+    "path": "OCR/real-world-images/chip2_annotated.jpg"
+  },
+  "ocr": {
+    "engine": "EasyOCR",
+    "language": [
+      "en"
+    ],
+    "detections": [
+      {
+        "id": 1,
+        "text": "Fo",
+        "confidence": 0.48,
+        "bbox": [
+          [
+            465,
+            609
+          ],
+          [
+            513,
+            609
+          ],
+          [
+            513,
+            649
+          ],
+          [
+            465,
+            649
+          ]
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Re",
+        "confidence": 0.93,
+        "bbox": [
+          [
+            496,
+            714
+          ],
+          [
+            524,
+            714
+          ],
+          [
+            524,
+            740
+          ],
+          [
+            496,
+            740
+          ]
+        ]
+      },
+      {
+        "id": 6,
+        "text": "MH",
+        "confidence": 0.61,
+        "bbox": [
+          [
+            606,
+            726
+          ],
+          [
+            638,
+            726
+          ],
+          [
+            638,
+            750
+          ],
+          [
+            606,
+            750
+          ]
+        ]
+      },
+      {
+        "id": 7,
+        "text": "0926",
+        "confidence": 0.99,
+        "bbox": [
+          [
+            80,
+            1230
+          ],
+          [
+            170,
+            1230
+          ],
+          [
+            170,
+            1262
+          ],
+          [
+            80,
+            1262
+          ]
+        ]
+      }
+    ]
+  },
+  "legal_metrology_compliance": {
+    "compliance_score_pct": 16.7,
+    "overall_status": "NON_COMPLIANT",
+    "total_rules_checked": 6,
+    "rules_passed_count": 1,
+    "rules_evaluation": {
+      "rule_6_1_da_mrp": {
+        "status": "NON_COMPLIANT",
+        "rule_name": "Rule 6(1)(da) - Retail Sale Price (MRP)",
+        "found": false,
+        "amount": null,
+        "inclusive_of_all_taxes": false,
+        "raw_text": null
+      },
+      "rule_6_1_c_net_quantity": {
+        "status": "NON_COMPLIANT",
+        "rule_name": "Rule 6(1)(c) - Net Quantity",
+        "found": false,
+        "quantity": null,
+        "unit": null,
+        "standard_unit_valid": false,
+        "raw_text": null
+      },
+      "rule_6_1_d_mfg_date": {
+        "status": "NON_COMPLIANT",
+        "rule_name": "Rule 6(1)(d) - Month & Year of Packing/Mfg",
+        "found": false,
+        "date": null,
+        "raw_text": null
+      },
+      "rule_6_1_a_manufacturer": {
+        "status": "NON_COMPLIANT",
+        "rule_name": "Rule 6(1)(a) - Manufacturer / Packer Details",
+        "found": false,
+        "details": null
+      },
+      "rule_6_1_e_consumer_care": {
+        "status": "NON_COMPLIANT",
+        "rule_name": "Rule 6(1)(e) - Consumer Care Helpline / Email",
+        "found": false,
+        "contact": null
+      },
+      "rule_7_font_size": {
+        "status": "COMPLIANT",
+        "rule_name": "Rule 7 - Minimum Font Size & Proportionality",
+        "compliant_lines_count": 4,
+        "too_small_lines_count": 0,
+        "min_font_height_px": 24,
+        "avg_font_height_px": 30.5
+      }
+    },
+    "violations": [
+      "Rule 6(1)(da) Violation: Maximum Retail Price (MRP) declaration is missing.",
+      "Rule 6(1)(c) Violation: Net quantity declaration is missing.",
+      "Rule 6(1)(d) Violation: Month and Year of manufacture/packing is missing.",
+      "Rule 6(1)(a) Violation: Name and complete address of the manufacturer/packer is missing.",
+      "Rule 6(1)(e) Violation: Consumer care details (helpline or email) is missing."
+    ]
+  }
+}

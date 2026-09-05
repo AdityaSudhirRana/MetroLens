@@ -1,0 +1,160 @@
+{
+  "declarations": [
+    {
+      "field": "product_name",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "manufacturer",
+      "value": "_",
+      "source_text": "MFG_",
+      "ocr_confidence": 0.9662,
+      "bbox": [
+        [
+          75.0,
+          613.0
+        ],
+        [
+          109.0,
+          613.0
+        ],
+        [
+          109.0,
+          633.0
+        ],
+        [
+          75.0,
+          633.0
+        ]
+      ],
+      "extraction_confidence": 0.8,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "manufacturer_address",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "packer",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "packer_address",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "importer",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "importer_address",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "net_quantity",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "mrp",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "manufacture_date",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "packing_date",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "import_date",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "consumer_care",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "consumer_care_phone",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    },
+    {
+      "field": "consumer_care_email",
+      "value": null,
+      "source_text": null,
+      "ocr_confidence": null,
+      "bbox": null,
+      "extraction_confidence": 0.0,
+      "extraction_method": "regex_fallback"
+    }
+  ],
+  "status": "FALLBACK",
+  "extraction_method": "regex_fallback",
+  "model_used": null,
+  "error_message": "Gemini API Error: All Gemini models failed. Last error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+}

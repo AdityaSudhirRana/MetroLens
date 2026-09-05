@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inquiry Management - AI Package Inspector</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/tables.css" />
+  <link rel="stylesheet" href="../css/inspection.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <a href="../index.html" class="sidebar-brand">
+          <img src="../assets/logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Navigation</div>
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <div class="nav-section-title">Inspections</div>
+        <a href="new-inspection.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          <span>New Inspection / Scan</span>
+        </a>
+        <a href="inspection-history.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          <span>Inspection History</span>
+        </a>
+
+        <div class="nav-section-title">Database & Records</div>
+        <a href="products.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          <span>Product Database</span>
+        </a>
+        <a href="inquiries.html" class="nav-item active">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Inquiry Management</span>
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          <span>Reports & Analytics</span>
+        </a>
+
+        <div class="nav-section-title">Account</div>
+        <a href="profile.html" class="nav-item">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>My Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="logout-btn" id="btn-logout">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="hamburger-btn" id="hamburger-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div style="font-weight:700; font-size:1.1rem; color:var(--primary-dark);">Inquiry & Dispute Control</div>
+        </div>
+
+        <div class="topbar-right">
+          <a href="profile.html" class="user-profile-badge">
+            <img id="nav-user-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" class="user-avatar" alt="Avatar" />
+            <div class="user-info">
+              <span id="nav-user-name" class="user-name">Rahul Sharma</span>
+              <span id="nav-user-role" class="user-role-tag">Senior Inspector</span>
+            </div>
+          </a>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <div class="page-header">
+          <div>
+            <h1 class="page-title">Packaging Inquiry Management</h1>
+            <p class="page-subtitle">Track, investigate, and resolve manufacturer disputes and consumer grievances.</p>
+          </div>
+          <button onclick="document.getElementById('new-inquiry-modal').classList.add('active')" class="btn btn-primary">+ Log New Inquiry</button>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="filter-bar">
+          <div class="search-box" style="width:300px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="inquiry-search" placeholder="Search inquiry subject, product, ID..." />
+          </div>
+
+          <div class="filter-group">
+            <label style="font-size:0.85rem; font-weight:600; color:var(--text-muted);">Status:
+              <select id="inquiry-status-filter" class="filter-select">
+                <option value="All">All Statuses</option>
+                <option value="Open">Open</option>
+                <option value="Under Review">Under Review</option>
+                <option value="Resolved">Resolved</option>
+                <option value="Closed">Closed</option>
+              </select>
+            </label>
+
+            <label style="font-size:0.85rem; font-weight:600; color:var(--text-muted);">Priority:
+              <select id="inquiry-priority-filter" class="filter-select">
+                <option value="All">All Priorities</option>
+                <option value="Critical">Critical</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- Inquiries Table -->
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Inquiry ID</th>
+                <th>Subject & Product</th>
+                <th>Date Logged</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Assigned Officer</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="inquiries-tbody">
+              <!-- JS Populated -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Create New Inquiry Modal -->
+  <div id="new-inquiry-modal" class="modal-overlay">
+    <div class="modal-card" style="max-width:540px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; border-bottom:1px solid var(--border); padding-bottom:12px;">
+        <h3 class="modal-title">Log New Packaging Inquiry</h3>
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('new-inquiry-modal').classList.remove('active')">✕</button>
+      </div>
+
+      <form id="new-inquiry-form">
+        <div class="form-group">
+          <label class="form-label" for="inq-subject">Inquiry Subject <span class="required">*</span></label>
+          <input type="text" id="inq-subject" class="form-control" placeholder="e.g. Consumer Care Address Discrepancy" required />
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="inq-product">Product Name <span class="required">*</span></label>
+            <input type="text" id="inq-product" class="form-control" placeholder="e.g. Sunflower Oil 1L" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-mfr">Manufacturer Name</label>
+            <input type="text" id="inq-mfr" class="form-control" placeholder="e.g. Adani Wilmar Ltd" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inq-priority">Priority Level <span class="required">*</span></label>
+          <select id="inq-priority" class="form-control" required>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Critical">Critical</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inq-desc">Detailed Description & Notes <span class="required">*</span></label>
+          <textarea id="inq-desc" class="form-control" rows="4" placeholder="Enter findings, retail location details..." required></textarea>
+        </div>
+
+        <div class="modal-actions" style="margin-top:20px;">
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('new-inquiry-modal').classList.remove('active')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Create Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/auth.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/inquiries.js"></script>
+</body>
+</html>

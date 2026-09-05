@@ -1,0 +1,122 @@
+[
+  {
+    "id": "INQ-2026-001",
+    "inquiryId": "INQ-2026-001",
+    "subject": "Missing Consumer Care Address on Sunflower Oil Batch",
+    "product": "Fortune Sunlite Refined Sunflower Oil",
+    "manufacturer": "Adani Wilmar Limited",
+    "date": "2026-09-02",
+    "priority": "High",
+    "status": "Open",
+    "description": "Retail outlet inspection in North Zone revealed batch 88B missing complete postal address in the consumer care declaration block.",
+    "assignedOfficer": "Rahul Sharma"
+  },
+  {
+    "id": "INQ-2026-002",
+    "inquiryId": "INQ-2026-002",
+    "subject": "MRP Font Size Discrepancy Verification",
+    "product": "Aashirvaad Shudh Chakki Whole Wheat Atta",
+    "manufacturer": "ITC Limited",
+    "date": "2026-08-29",
+    "priority": "Medium",
+    "status": "Under Review",
+    "description": "Inquiry initiated regarding font height of MRP on 5kg bags. Sample sent to Metrology Standard Laboratory for digital micrometer height check.",
+    "assignedOfficer": "Priya Verma"
+  },
+  {
+    "id": "INQ-2026-003",
+    "inquiryId": "INQ-2026-003",
+    "subject": "Missing Toll-Free Helpline Number Complaint",
+    "product": "Tata Salt Vacuum Evaporated Iodised Salt",
+    "manufacturer": "Tata Consumer Products Limited",
+    "date": "2026-08-16",
+    "priority": "Critical",
+    "status": "Open",
+    "description": "Public grievance report received stating customer care helpline number printed on 1kg salt packs is invalid.",
+    "assignedOfficer": "Rahul Sharma"
+  },
+  {
+    "id": "INQ-2026-004",
+    "inquiryId": "INQ-2026-004",
+    "subject": "Net Quantity Font Height Deficiency Notice",
+    "product": "Surf Excel Easy Wash Detergent Powder",
+    "manufacturer": "Hindustan Unilever Limited",
+    "date": "2026-08-20",
+    "priority": "High",
+    "status": "Resolved",
+    "description": "Manufacturer submitted revised packaging artwork showing 4.2mm font height for net weight declaration as per Rule 7(1). Notice satisfied.",
+    "assignedOfficer": "Amit Patel"
+  },
+  {
+    "id": "INQ-2026-005",
+    "inquiryId": "INQ-2026-005",
+    "subject": "BIS Mark & License Number Verification",
+    "product": "Bisleri Premium Packaged Drinking Water",
+    "manufacturer": "Bisleri International Pvt Ltd",
+    "date": "2026-09-01",
+    "priority": "Low",
+    "status": "Closed",
+    "description": "Verified BIS certification IS 14543 CML number on 1L bottles. All documentation matched central registry.",
+    "assignedOfficer": "Priya Verma"
+  },
+  {
+    "id": "INQ-2026-006",
+    "inquiryId": "INQ-2026-006",
+    "subject": "Smudged Manufacturing Date Code Inquiry",
+    "product": "Dettol Liquid Handwash Original Pump",
+    "manufacturer": "Reckitt Benckiser (India) Pvt Ltd",
+    "date": "2026-07-24",
+    "priority": "Critical",
+    "status": "Under Review",
+    "description": "Distributor show-cause notice issued regarding 15 bottles with unreadable mfg date stamps at regional depot.",
+    "assignedOfficer": "Sunita Rao"
+  },
+  {
+    "id": "INQ-2026-007",
+    "inquiryId": "INQ-2026-007",
+    "subject": "Unit Sale Price Declaration Compliance",
+    "product": "Britannia Good Day Cashew Cookies",
+    "manufacturer": "Britannia Industries Limited",
+    "date": "2026-07-10",
+    "priority": "Medium",
+    "status": "Resolved",
+    "description": "Verified unit sale price (₹/g) printed on multi-pack outer carton in accordance with 2022 Legal Metrology Amendment.",
+    "assignedOfficer": "Rahul Sharma"
+  },
+  {
+    "id": "INQ-2026-008",
+    "inquiryId": "INQ-2026-008",
+    "subject": "Spice Net Weight Tare Weight Calibration Inquiry",
+    "product": "Everest Pure Turmeric Powder",
+    "manufacturer": "Everest Spices Ltd",
+    "date": "2026-08-12",
+    "priority": "Low",
+    "status": "Closed",
+    "description": "Random sampling verified gross and tare weight of 200g foil pouches. Zero discrepancy found.",
+    "assignedOfficer": "Amit Patel"
+  },
+  {
+    "id": "INQ-2026-009",
+    "inquiryId": "INQ-2026-009",
+    "subject": "Butter Refrigeration Density Weight Standard Verification",
+    "product": "Amul Pasteurised Salted Butter",
+    "manufacturer": "GCMMF Anand",
+    "date": "2026-09-04",
+    "priority": "Low",
+    "status": "Open",
+    "description": "Routine cold chain inspection check of 500g butter packs at central distribution cold storage.",
+    "assignedOfficer": "Rahul Sharma"
+  },
+  {
+    "id": "INQ-2026-010",
+    "inquiryId": "INQ-2026-010",
+    "subject": "Importer Name & Address Labeling Inquiry",
+    "product": "Sunsilk Thick & Long Shampoo",
+    "manufacturer": "Hindustan Unilever Limited",
+    "date": "2026-06-05",
+    "priority": "Medium",
+    "status": "Closed",
+    "description": "Domestic product confirmation completed. Product verified as manufactured in Baddi unit (Not imported).",
+    "assignedOfficer": "Sunita Rao"
+  }
+]
