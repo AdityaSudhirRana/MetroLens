@@ -1,0 +1,178 @@
+# METROLENS PROPRIETARY LICENSE
+
+**Version 1.0 — October 2026**
+
+**Copyright © 2026 the respective rights holders of MetroLens. All Rights Reserved, subject to applicable law and third-party rights.**
+
+## 1. Copyright Holders
+
+MetroLens was developed by the following contributors under the team name **Kardashev-6**:
+
+1. **Aditya Rana** — [@AdityaSudhirRana](https://github.com/AdityaSudhirRana) — Team Leader
+2. **Dhruv Choubey** — [@dhruvchaubey496-ai](https://github.com/dhruvchaubey496-ai)
+3. **Mohid Pathan** — [@mohidpathan18](https://github.com/mohidpathan18)
+4. **Akshat Halwai** — [@Akshat232007](https://github.com/Akshat232007)
+5. **Pratik Rajbhar** — [@Pratikrajgraphiety](https://github.com/Pratikrajgraphiety)
+6. **Srushti Vedak** — [@Srushtics30](https://github.com/Srushtics30)
+
+GitHub usernames are provided for identification and attribution. They do not, by themselves, determine legal ownership of the Work.
+
+## 2. Definitions
+
+For the purposes of this license:
+
+- **MetroLens** means the software project and its associated original materials developed under the MetroLens name.
+- **Work** means the original source code, documentation, software architecture, algorithms, project-specific logic, interfaces, designs, and other copyrightable materials contained in the repository, to the extent owned by the applicable rights holders.
+- **Rights Holders** means the individuals or entities holding rights in the relevant portions of the Work.
+- **Repository** means the MetroLens repository hosted on GitHub.
+
+## 3. Ownership and Intellectual Property
+
+The Work is protected by applicable copyright and intellectual-property laws.
+
+Rights in the original Work remain with their respective rights holders, subject to applicable law and any written agreements among contributors.
+
+Public availability of the Repository does not, by itself, transfer ownership or grant a general license to reproduce, modify, distribute, or commercially exploit the Work.
+
+Nothing in this license claims ownership of third-party materials or restricts rights independently granted by third-party licenses or applicable law.
+
+## 4. Permitted Access and Evaluation
+
+Individuals may access, view, and inspect the publicly available Repository for legitimate purposes, including:
+
+- Hackathon and competition evaluation.
+- Review by judges, mentors, and academic institutions.
+- Verification of project functionality and technical implementation.
+- Academic assessment and technical discussion.
+- Referencing the existence of MetroLens with appropriate attribution.
+
+This permission covers viewing and inspection only. It does not grant general permission to reproduce, modify, redistribute, or commercially exploit the Work.
+
+Any additional use requires authorization under Section 6, unless independently permitted by applicable law or another applicable license.
+
+## 5. Restrictions
+
+Except where expressly permitted by this license, authorized in writing by the applicable rights holder, or otherwise permitted by law, no person or organization may:
+
+1. Reproduce or redistribute the Work or substantial portions of it.
+2. Modify, adapt, translate, or create derivative works from the Work.
+3. Republish, re-host, sublicense, or distribute the Work.
+4. Incorporate substantial portions of the Work into another project, product, service, or competition submission.
+5. Commercially exploit the Work or substantial portions of it.
+6. Present MetroLens or substantial portions of its original implementation as independently developed by another person or organization.
+7. Claim ownership or authorship of original Work belonging to other rights holders.
+8. Remove or misrepresent applicable copyright, authorship, or proprietary notices.
+9. Use the MetroLens or Kardashev-6 names, logos, or branding in a manner that falsely suggests official endorsement, sponsorship, or affiliation.
+
+Nothing in this section prohibits activities that cannot lawfully be prohibited under applicable law.
+
+## 6. Written Authorization
+
+Requests for permission to reproduce, modify, distribute, incorporate, or commercially use the Work must be directed to the applicable rights holder or rights holders.
+
+Any authorization should identify the intended use and the specific rights being granted.
+
+Permission for one particular use does not automatically authorize other uses.
+
+No additional rights are granted except those expressly authorized, subject to applicable law and any rights granted under third-party licenses.
+
+## 7. Third-Party Components
+
+MetroLens may contain or depend on third-party libraries, frameworks, APIs, artificial-intelligence models, datasets, fonts, images, and other materials.
+
+Such components remain subject to their respective licenses, terms of service, and intellectual-property rights.
+
+This license applies only to material over which the applicable rights holders possess the necessary rights.
+
+Where third-party terms or applicable law grant rights that cannot be restricted by this license, those rights remain unaffected.
+
+Users are responsible for complying with applicable terms governing third-party components.
+
+## 8. Artificial Intelligence and External Services
+
+MetroLens may use third-party artificial-intelligence services and APIs.
+
+The use of these services does not, by itself, transfer ownership of original MetroLens materials to service providers. The ownership and permitted use of third-party models, services, and generated outputs remain subject to their applicable terms and law.
+
+This section does not override third-party contractual terms or intellectual-property rights.
+
+## 9. Project Name and Branding
+
+The names **MetroLens** and **Kardashev-6**, along with associated original logos, visual identity, and branding, are not granted for unrestricted use under this license.
+
+No permission is granted to use these identifiers in a manner that falsely implies endorsement, sponsorship, official affiliation, or authorization by the project team.
+
+Any applicable trademark rights remain subject to relevant law.
+
+## 10. Contributions
+
+Each contributor retains the rights they hold in their original contributions, subject to applicable law and any separate agreements.
+
+A contribution to the Repository does not, by itself, grant the public unrestricted permission to reproduce, modify, distribute, or commercially exploit that contribution.
+
+Contributors are responsible for ensuring that they have the necessary rights to submit their contributions.
+
+## 11. No Open-Source License
+
+MetroLens is **not released under an open-source license**.
+
+This license does not grant the general rights to use, modify, redistribute, sublicense, or commercially exploit the Work that an open-source license would ordinarily provide.
+
+Public availability of source code does not, by itself, authorize those activities.
+
+Rights required by applicable law or independently granted under third-party licenses remain unaffected.
+
+## 12. Disclaimer of Warranty
+
+To the maximum extent permitted by applicable law, the Work is provided **“AS IS” and “AS AVAILABLE”**, without warranties of any kind, whether express or implied.
+
+The rights holders do not warrant that the Work is error-free, uninterrupted, secure, or suitable for a particular purpose.
+
+MetroLens is a technical prototype for packaged-commodity compliance analysis. Its results may be incomplete or inaccurate and should not be treated as definitive legal determinations or as a substitute for official regulatory inspection.
+
+## 13. Limitation of Liability
+
+To the maximum extent permitted by applicable law, the rights holders shall not be liable for damages arising from the use of, inability to use, or reliance on the Work.
+
+Nothing in this section excludes or limits liability where such exclusion or limitation is prohibited by applicable law.
+
+## 14. Termination
+
+Any permission expressly granted under this license may terminate upon a material breach of its conditions, to the extent permitted by applicable law.
+
+Upon termination, the affected party must cease activities that are no longer authorized.
+
+Termination does not affect rights or remedies arising from prior violations or rights that survive termination under applicable law.
+
+## 15. Governing Law
+
+This license shall be governed by the laws of **India**, subject to applicable mandatory legal provisions.
+
+Nothing in this license is intended to exclude rights or remedies that cannot lawfully be excluded.
+
+## 16. Severability
+
+If any provision of this license is found to be invalid or unenforceable, that provision shall be limited or severed to the minimum extent necessary, and the remaining provisions shall continue to apply to the extent permitted by law.
+
+## 17. Entire Agreement
+
+This license states the terms governing the use of the Work within its scope. Any separate written agreement that expressly modifies or supersedes these terms shall apply according to its terms.
+
+## 18. All Rights Reserved
+
+Except for the limited permissions expressly stated in this license, all rights in the original Work are reserved by the applicable rights holders.
+
+---
+
+## METROLENS
+
+**Developed by Kardashev-6**
+
+- [Aditya Rana (@AdityaSudhirRana)](https://github.com/AdityaSudhirRana)
+- [Dhruv Choubey (@dhruvchaubey496-ai)](https://github.com/dhruvchaubey496-ai)
+- [Mohid Pathan (@mohidpathan18)](https://github.com/mohidpathan18)
+- [Akshat Halwai (@Akshat232007)](https://github.com/Akshat232007)
+- [Pratik Rajbhar (@Pratikrajgraphiety)](https://github.com/Pratikrajgraphiety)
+- [Srushti Vedak (@Srushtics30)](https://github.com/Srushtics30)
+
+**Copyright © 2026. All Rights Reserved, subject to applicable law and third-party rights.**
