@@ -1,32 +1,34 @@
-# METROLENS PROPRIETARY LICENSE
+METROLENS PROPRIETARY LICENSE
+Version 1.0 — October 2026
 
-**Version 1.0 — October 2026**
+Copyright © 2026 the respective rights holders of MetroLens. All Rights Reserved, subject to applicable law and third-party rights.
 
-**Copyright © 2026 the respective rights holders of MetroLens. All Rights Reserved, subject to applicable law and third-party rights.**
+1. COPYRIGHT HOLDERS
 
-## 1. Copyright Holders
+MetroLens was developed by the following contributors under the team name Kardashev-6:
 
-MetroLens was developed by the following contributors under the team name **Kardashev-6**:
-
-1. **Aditya Rana** — [@AdityaSudhirRana](https://github.com/AdityaSudhirRana) — Team Leader
-2. **Dhruv Choubey** — [@dhruvchaubey496-ai](https://github.com/dhruvchaubey496-ai)
-3. **Mohid Pathan** — [@mohidpathan18](https://github.com/mohidpathan18)
-4. **Akshat Halwai** — [@Akshat232007](https://github.com/Akshat232007)
-5. **Pratik Rajbhar** — [@Pratikrajgraphiety](https://github.com/Pratikrajgraphiety)
-6. **Srushti Vedak** — [@Srushtics30](https://github.com/Srushtics30)
+1. Aditya Rana — https://github.com/AdityaSudhirRana — Team Leader
+2. Dhruv Choubey — https://github.com/dhruvchaubey496-ai
+3. Mohid Pathan — https://github.com/mohidpathan18
+4. Akshat Halwai — https://github.com/Akshat232007
+5. Pratik Rajbhar — https://github.com/Pratikrajgraphiety
+6. Srushti Vedak — https://github.com/Srushtics30
 
 GitHub usernames are provided for identification and attribution. They do not, by themselves, determine legal ownership of the Work.
 
-## 2. Definitions
+2. DEFINITIONS
 
 For the purposes of this license:
 
-- **MetroLens** means the software project and its associated original materials developed under the MetroLens name.
-- **Work** means the original source code, documentation, software architecture, algorithms, project-specific logic, interfaces, designs, and other copyrightable materials contained in the repository, to the extent owned by the applicable rights holders.
-- **Rights Holders** means the individuals or entities holding rights in the relevant portions of the Work.
-- **Repository** means the MetroLens repository hosted on GitHub.
+“MetroLens” means the software project and its associated original materials developed under the MetroLens name.
 
-## 3. Ownership and Intellectual Property
+“Work” means the original source code, documentation, software architecture, algorithms, project-specific logic, interfaces, designs, and other copyrightable materials contained in the repository, to the extent owned by the applicable rights holders.
+
+“Rights Holders” means the individuals or entities holding rights in the relevant portions of the Work.
+
+“Repository” means the MetroLens repository hosted on GitHub.
+
+3. OWNERSHIP AND INTELLECTUAL PROPERTY
 
 The Work is protected by applicable copyright and intellectual-property laws.
 
@@ -36,7 +38,7 @@ Public availability of the Repository does not, by itself, transfer ownership or
 
 Nothing in this license claims ownership of third-party materials or restricts rights independently granted by third-party licenses or applicable law.
 
-## 4. Permitted Access and Evaluation
+4. PERMITTED ACCESS AND EVALUATION
 
 Individuals may access, view, and inspect the publicly available Repository for legitimate purposes, including:
 
@@ -50,7 +52,7 @@ This permission covers viewing and inspection only. It does not grant general pe
 
 Any additional use requires authorization under Section 6, unless independently permitted by applicable law or another applicable license.
 
-## 5. Restrictions
+5. RESTRICTIONS
 
 Except where expressly permitted by this license, authorized in writing by the applicable rights holder, or otherwise permitted by law, no person or organization may:
 
@@ -66,7 +68,7 @@ Except where expressly permitted by this license, authorized in writing by the a
 
 Nothing in this section prohibits activities that cannot lawfully be prohibited under applicable law.
 
-## 6. Written Authorization
+6. WRITTEN AUTHORIZATION
 
 Requests for permission to reproduce, modify, distribute, incorporate, or commercially use the Work must be directed to the applicable rights holder or rights holders.
 
@@ -76,7 +78,7 @@ Permission for one particular use does not automatically authorize other uses.
 
 No additional rights are granted except those expressly authorized, subject to applicable law and any rights granted under third-party licenses.
 
-## 7. Third-Party Components
+7. THIRD-PARTY COMPONENTS
 
 MetroLens may contain or depend on third-party libraries, frameworks, APIs, artificial-intelligence models, datasets, fonts, images, and other materials.
 
@@ -88,7 +90,7 @@ Where third-party terms or applicable law grant rights that cannot be restricted
 
 Users are responsible for complying with applicable terms governing third-party components.
 
-## 8. Artificial Intelligence and External Services
+8. ARTIFICIAL INTELLIGENCE AND EXTERNAL SERVICES
 
 MetroLens may use third-party artificial-intelligence services and APIs.
 
@@ -96,15 +98,15 @@ The use of these services does not, by itself, transfer ownership of original Me
 
 This section does not override third-party contractual terms or intellectual-property rights.
 
-## 9. Project Name and Branding
+9. PROJECT NAME AND BRANDING
 
-The names **MetroLens** and **Kardashev-6**, along with associated original logos, visual identity, and branding, are not granted for unrestricted use under this license.
+The names MetroLens and Kardashev-6, along with associated original logos, visual identity, and branding, are not granted for unrestricted use under this license.
 
 No permission is granted to use these identifiers in a manner that falsely implies endorsement, sponsorship, official affiliation, or authorization by the project team.
 
 Any applicable trademark rights remain subject to relevant law.
 
-## 10. Contributions
+10. CONTRIBUTIONS
 
 Each contributor retains the rights they hold in their original contributions, subject to applicable law and any separate agreements.
 
@@ -112,9 +114,9 @@ A contribution to the Repository does not, by itself, grant the public unrestric
 
 Contributors are responsible for ensuring that they have the necessary rights to submit their contributions.
 
-## 11. No Open-Source License
+11. NO OPEN-SOURCE LICENSE
 
-MetroLens is **not released under an open-source license**.
+MetroLens is not released under an open-source license.
 
 This license does not grant the general rights to use, modify, redistribute, sublicense, or commercially exploit the Work that an open-source license would ordinarily provide.
 
@@ -122,21 +124,21 @@ Public availability of source code does not, by itself, authorize those activiti
 
 Rights required by applicable law or independently granted under third-party licenses remain unaffected.
 
-## 12. Disclaimer of Warranty
+12. DISCLAIMER OF WARRANTY
 
-To the maximum extent permitted by applicable law, the Work is provided **“AS IS” and “AS AVAILABLE”**, without warranties of any kind, whether express or implied.
+To the maximum extent permitted by applicable law, the Work is provided “AS IS” and “AS AVAILABLE”, without warranties of any kind, whether express or implied.
 
 The rights holders do not warrant that the Work is error-free, uninterrupted, secure, or suitable for a particular purpose.
 
 MetroLens is a technical prototype for packaged-commodity compliance analysis. Its results may be incomplete or inaccurate and should not be treated as definitive legal determinations or as a substitute for official regulatory inspection.
 
-## 13. Limitation of Liability
+13. LIMITATION OF LIABILITY
 
 To the maximum extent permitted by applicable law, the rights holders shall not be liable for damages arising from the use of, inability to use, or reliance on the Work.
 
 Nothing in this section excludes or limits liability where such exclusion or limitation is prohibited by applicable law.
 
-## 14. Termination
+14. TERMINATION
 
 Any permission expressly granted under this license may terminate upon a material breach of its conditions, to the extent permitted by applicable law.
 
@@ -144,35 +146,32 @@ Upon termination, the affected party must cease activities that are no longer au
 
 Termination does not affect rights or remedies arising from prior violations or rights that survive termination under applicable law.
 
-## 15. Governing Law
+15. GOVERNING LAW
 
-This license shall be governed by the laws of **India**, subject to applicable mandatory legal provisions.
+This license shall be governed by the laws of India, subject to applicable mandatory legal provisions.
 
 Nothing in this license is intended to exclude rights or remedies that cannot lawfully be excluded.
 
-## 16. Severability
+16. SEVERABILITY
 
 If any provision of this license is found to be invalid or unenforceable, that provision shall be limited or severed to the minimum extent necessary, and the remaining provisions shall continue to apply to the extent permitted by law.
 
-## 17. Entire Agreement
+17. ENTIRE AGREEMENT
 
 This license states the terms governing the use of the Work within its scope. Any separate written agreement that expressly modifies or supersedes these terms shall apply according to its terms.
 
-## 18. All Rights Reserved
+18. ALL RIGHTS RESERVED
 
 Except for the limited permissions expressly stated in this license, all rights in the original Work are reserved by the applicable rights holders.
 
----
+METROLENS
+Developed by Kardashev-6
 
-## METROLENS
+Aditya Rana — https://github.com/AdityaSudhirRana
+Dhruv Choubey — https://github.com/dhruvchaubey496-ai
+Mohid Pathan — https://github.com/mohidpathan18
+Akshat Halwai — https://github.com/Akshat232007
+Pratik Rajbhar — https://github.com/Pratikrajgraphiety
+Srushti Vedak — https://github.com/Srushtics30
 
-**Developed by Kardashev-6**
-
-- [Aditya Rana (@AdityaSudhirRana)](https://github.com/AdityaSudhirRana)
-- [Dhruv Choubey (@dhruvchaubey496-ai)](https://github.com/dhruvchaubey496-ai)
-- [Mohid Pathan (@mohidpathan18)](https://github.com/mohidpathan18)
-- [Akshat Halwai (@Akshat232007)](https://github.com/Akshat232007)
-- [Pratik Rajbhar (@Pratikrajgraphiety)](https://github.com/Pratikrajgraphiety)
-- [Srushti Vedak (@Srushtics30)](https://github.com/Srushtics30)
-
-**Copyright © 2026. All Rights Reserved, subject to applicable law and third-party rights.**
+Copyright © 2026. All Rights Reserved, subject to applicable law and third-party rights.
